@@ -1,4 +1,7 @@
 @import './base/common';
 @import './base/reset';
+@import './base/variables';
 
-@import url('./components/fonts.scss');
+@import url('./components/_fonts.scss');
+@import './components/container';
+@import './components/logo';
