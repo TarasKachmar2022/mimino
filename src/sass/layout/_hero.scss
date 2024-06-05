@@ -1,0 +1,13 @@
+.hero {
+}
+
+.hero__title {
+  @extend .logo;
+  @extend .logo--white;
+}
+
+.hero__subtitle {
+}
+
+.hero__descr {
+}
