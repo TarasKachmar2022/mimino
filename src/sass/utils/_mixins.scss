@@ -1,0 +1,61 @@
+@mixin font($fw: 400, $fs: 16px, $lh: normal, $ls: 0.03em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin section($pt: 24px, $pb: 40px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+// @mixin mobile {
+//   @media screen and (min-width: 480px) {
+//     @content;
+//   }
+// }
+
+// @mixin tablet {
+//   @media screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+
+// @mixin media(size) {
+//   @media screen and (min-width: size) {
+//     @content;
+//   }
+// }
+
+// @mixin card-set(indent) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: var(indent);
+// }
+
+// @mixin card-item(indent, item) {
+//   flex-basis: calc((100% - indent * (item - 1)) / item);
+// }
+
+// @mixin retina {
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     @content;
+//   }
+// }
+
+// @mixin retinathird {
+//   @media (min-device-pixel-ratio: 3),
+//     (min-resolution: 288dpi),
+//     (min-resolution: 3dppx) {
+//     @content;
+//   }
+// }

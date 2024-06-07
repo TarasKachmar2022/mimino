@@ -1,13 +1,37 @@
 .hero {
+  @include section(181, 102);
+  background-color: rgba(0, 0, 0, 0.65);
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url('../images/hero/hero-bg-img_m.jpg');
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: var(--white-text-cl);
 }
 
 .hero__title {
-  @extend .logo;
-  @extend .logo--white;
+  @extend %main-title;
+  margin-bottom: 24px;
 }
 
 .hero__subtitle {
+  @extend %main-subtitle;
+  margin-bottom: 40px;
+}
+.hero__descr {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: calc(38 / 32);
+  letter-spacing: 0.05em;
+  margin-bottom: 113px;
 }
 
-.hero__descr {
+.hero__wrap > .btn:first-child {
+  margin-bottom: 24px;
 }

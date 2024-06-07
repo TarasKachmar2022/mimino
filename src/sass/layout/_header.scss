@@ -1,4 +1,12 @@
 .header__logo {
   @extend .logo;
   @extend .logo--white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
