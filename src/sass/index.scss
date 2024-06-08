@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './base/variables';
 
+@import './utils/hidden';
 @import './utils/mixins';
 @import './utils/placeholders';
 
@@ -12,3 +13,4 @@
 
 @import './layout/header';
 @import './layout/hero';
+@import './layout/about-restaurant.scss';

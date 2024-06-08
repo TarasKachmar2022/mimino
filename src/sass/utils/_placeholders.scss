@@ -12,3 +12,18 @@
   line-height: calc(19 / 16);
   letter-spacing: 0.02em;
 }
+
+%uppertitle {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0;
+  color: var(--uppertitle-text-cl);
+}
+
+%descr {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.02em;
+}

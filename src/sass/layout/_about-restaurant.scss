@@ -1,0 +1,49 @@
+.about-restaurant {
+  @include section(16, 20);
+  background-color: var(--bg-lemon-cl);
+}
+
+.about-restaurant__uppertitle {
+  @extend %uppertitle;
+  margin-bottom: 12px;
+}
+
+.about-restaurant__logo {
+  @extend .logo;
+  font-size: 40px;
+  color: var(--section-titles-dark-text-cl);
+  margin-bottom: 12px;
+}
+
+.about-restaurant__item {
+  margin-bottom: 32px;
+}
+
+.about-restaurant__item:nth-child(2n + 1) > .about-restaurant__descr {
+  @extend %descr;
+  margin-bottom: 28px;
+  max-width: 258px;
+}
+
+.about-restaurant__item:nth-child(2n + 1) > .about-restaurant__img {
+  margin-left: auto;
+}
+
+.about-restaurant__item:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.about-restaurant__item:nth-child(2n) > .about-restaurant__descr {
+  @extend %descr;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: var(--accent-descr-text-cl);
+  max-width: 156px;
+  margin-right: auto;
+}
+
+.about-restaurant__item:nth-child(2n) > .about-restaurant__img {
+}
