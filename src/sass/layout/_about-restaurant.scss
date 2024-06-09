@@ -1,5 +1,6 @@
 .about-restaurant {
   @include section(16, 20);
+  position: relative;
   background-color: var(--bg-lemon-cl);
 }
 
@@ -26,6 +27,7 @@
 }
 
 .about-restaurant__item:nth-child(2n + 1) > .about-restaurant__img {
+  display: block;
   margin-left: auto;
 }
 
@@ -46,4 +48,5 @@
 }
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__img {
+  display: block;
 }
