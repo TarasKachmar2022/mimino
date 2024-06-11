@@ -1,0 +1,38 @@
+.details-hotel {
+  @include section(24, 40);
+  background-color: rgba(33, 33, 33, 0.2);
+  background-image: linear-gradient(
+      to right,
+      var(--hero-gradient),
+      var(--hero-gradient)
+    ),
+    url('./../images/details-hotel/details-hotel-bg-img_m.jpg');
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.details-hotel__logo {
+  @extend .logo;
+  @extend .logo--white;
+  margin-bottom: 12px;
+}
+
+.details-hotel__title {
+  @extend %section-title;
+
+  margin-bottom: 20px;
+}
+
+.details-hotel__descr {
+  @extend %descr;
+  text-align: left;
+  color: var(--descr-text-cl);
+  margin-bottom: 48px;
+  max-width: 243px;
+}
+
+.details-hotel__btn-wrap > .btn:not(:last-child) {
+  margin-bottom: 16px;
+}
