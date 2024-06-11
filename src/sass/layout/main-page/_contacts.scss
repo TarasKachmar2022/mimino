@@ -1,0 +1,84 @@
+.contacts {
+  @include section(36, 32);
+  background-color: var(--bg-lemon-cl);
+}
+
+.contacts__logo {
+  @extend .logo;
+  @extend .logo--dark;
+  margin-bottom: 12px;
+}
+
+.contacts__title {
+  @extend %section-title;
+  font-size: 16px;
+  color: var(--main-text-cl);
+  margin-bottom: 16px;
+}
+
+.contacts__list {
+  margin-bottom: 32px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contacts__item > p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: var(--accent-descr-text-cl);
+}
+
+.contacts__item:first-child > p {
+  margin-right: 21px;
+}
+
+.contacts__item:last-child > a {
+  // text-align: left;
+}
+
+.contacts__item:last-child > a {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  margin-left: 122px;
+  width: 260px;
+}
+
+.contacts__item:first-child > .contacts__link,
+.contacts__item:last-child > .contacts__link {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-cl);
+  background-color: #fff;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.02em;
+  padding: 8px;
+}
+
+.contacts__icon {
+  margin-right: 8px;
+  fill: var(--accent-descr-text-cl);
+}
+
+.contacts__hotel-phone {
+  padding-right: 4px;
+}
+
+.contacts__wrap {
+  display: flex;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-cl);
+  background-color: #fff;
+  margin-left: 54px;
+}
