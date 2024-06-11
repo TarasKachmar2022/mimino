@@ -11,8 +11,8 @@
 
 .about-restaurant__logo {
   @extend .logo;
+  @extend .logo--dark;
   font-size: 40px;
-  color: var(--section-titles-dark-text-cl);
   margin-bottom: 12px;
 }
 
@@ -33,15 +33,13 @@
 
 .about-restaurant__item:nth-child(2n) {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
   gap: 20px;
 }
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__descr {
   @extend %descr;
-  display: flex;
-  align-items: center;
-  justify-content: left;
   color: var(--accent-descr-text-cl);
   max-width: 156px;
   margin-right: auto;
@@ -52,7 +50,7 @@
 }
 
 .about-rest {
-  &.slider {
+  &.slider-right {
     margin-right: -15px;
     margin-left: 69px;
     max-width: 330px;

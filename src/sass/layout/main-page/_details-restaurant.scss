@@ -21,7 +21,7 @@
 
 .details-restaurant__logo {
   @extend .logo;
-  color: var(--section-titles-white-text-cl);
+  @extend .logo--white;
   margin-bottom: 12px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .details-rest {
-  &.slider {
+  &.slider-right {
     margin-right: -15px;
     margin-bottom: 32px;
     margin-left: 25px;
