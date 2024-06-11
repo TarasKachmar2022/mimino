@@ -27,3 +27,11 @@
   line-height: calc(14 / 12);
   letter-spacing: 0.02em;
 }
+
+%section-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--section-titles-white-text-cl);
+}

@@ -3,7 +3,7 @@ import 'slick-carousel';
 
 $('.slider').slick({
   dots: false, // Пагінація
-  adaptiveHeight: true, // Адаптація слайдера по висоті зображення
+  // adaptiveHeight: true, // Адаптація слайдера по висоті зображення
   slidesToShow: 2, // Скільки слайдів відображається
   // slidesToScroll: 1,   // Скільки слайдів змінюється за раз
   // speed: 100,          // Швидкість зміни слайда

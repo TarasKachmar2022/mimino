@@ -12,6 +12,8 @@
   --white-text-cl: #ffffff;
   --uppertitle-text-cl: #b4b4b4;
   --section-titles-dark-text-cl: #494848;
+  --section-titles-white-text-cl: #ffffff;
+  --descr-text-cl: #bababa;
   // Background colors
   --bg-lemon-cl: #fffdee;
   // Logo colors
@@ -27,4 +29,8 @@
   // Gradients
   --btn-gradient: rgba(0, 0, 0, 0.4);
   --hero-gradient: rgba(0, 0, 0, 0.6);
+  // Duration
+  --duration: 250ms;
+  // Timing function
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -2,9 +2,6 @@
 
 .slick-slider {
   position: relative;
-  margin-right: -15px;
-  margin-left: 69px;
-  height: 297px;
 
   // @media screen and (max-width: 767px) {
   //   margin: -15px;
@@ -30,9 +27,6 @@
 }
 
 .slider-item {
-  width: 245px;
-  height: 245px;
-  margin-right: 25px;
   //   @media screen and (min-width: 480px) {
   //     max-width: 480px;
   //     max-height: 580px;
@@ -49,16 +43,14 @@
   //   }
 }
 
-.slick-arrow {
+.slick-slider .slick-arrow {
   position: absolute;
-  bottom: 0;
-  right: 15;
-  width: auto;
+  z-index: 10;
 }
 
-.slick-prev {
-  right: 81;
-  background-image: url(./../images/svg/arrow-left.svg);
+.slick-arrow.slick-prev {
+  position: absolute;
+  margin-right: 32px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -67,31 +59,13 @@
   width: 32px;
   height: 32px;
   padding: 0;
-  //   transform: translateY(-100%);
-  //   z-index: 1;
-  // &::before {
-  //   content: '';
-  //     font-weight: 500;
-  //     font-size: 11px;
-  //     line-height: 1.36;
-  //     letter-spacing: 0.1em;
-  //     color: var(--slider-btn-cl);
-  //     border-bottom: 1px solid var(--slider-btn-cl);
-  //     padding-left: 9px;
-  //     padding-bottom: 8px;
-  //     transition-property: color, border-bottom;
-  //     transition-duration: var(--duration);
-  //     transition-timing-function: var(--timing-function);
-  // }
-  &:hover {
-    // color: var(--slider-btn-white-cl);
-    // fill: var(--accent-cl);
-    // border-bottom: 1px solid var(--slider-btn-white-cl);
-  }
+  transition-property: background-image;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
-.slick-next {
-  background-image: url(./../images/svg/arrow-right.svg);
+.slick-arrow.slick-next {
+  position: absolute;
   background-repeat: no-repeat;
   background-position: right;
   background-color: transparent;
@@ -100,25 +74,9 @@
   width: 32px;
   height: 32px;
   padding: 0;
-  //   transform: translateY(-100%);
-  //   &::before {
-  //     content: 'Forward';
-  //     font-weight: 500;
-  //     font-size: 11px;
-  //     line-height: 1.36;
-  //     letter-spacing: 0.1em;
-  //     color: var(--slider-btn-cl);
-  //     border-bottom: 1px solid var(--slider-btn-cl);
-  //     padding-left: 9px;
-  //     padding-bottom: 8px;
-  //     transition-property: color, border-bottom;
-  //     transition-duration: var(--duration);
-  //     transition-timing-function: var(--timing-function);
-  //   }
-  //   &:hover::before {
-  //     color: var(--slider-btn-white-cl);
-  //     border-bottom: 1px solid var(--slider-btn-white-cl);
-  //   }
+  transition-property: background-image;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 }
 
 // .slick-dots {
