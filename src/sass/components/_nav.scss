@@ -1,0 +1,25 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav__list {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.site-nav__link {
+  color: var(--accent-cl);
+
+  &:hover {
+    color: var(--accent-hovered-cl);
+  }
+}

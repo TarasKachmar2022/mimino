@@ -1,0 +1,12 @@
+.footer {
+  @include section(40, 40);
+  background-color: var(--footer-bg-cl);
+  // color: var(--accent-cl);
+}
+
+.footer__logo {
+  @extend .logo;
+}
+
+.footer__wrap {
+}

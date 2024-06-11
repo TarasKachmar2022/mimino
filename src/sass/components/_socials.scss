@@ -1,0 +1,16 @@
+.social-list {
+  display: flex;
+  gap: 20px;
+}
+
+.social__link {
+  color: var(--accent-cl);
+
+  &:hover {
+    color: var(--accent-hovered-cl);
+  }
+}
+
+.social-icons {
+  fill: currentColor;
+}
