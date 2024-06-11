@@ -1,5 +1,6 @@
 .hero {
   @include section(181, 102);
+  position: relative;
   background-color: rgba(0, 0, 0, 0.65);
   background-image: linear-gradient(
       to right,
@@ -12,6 +13,22 @@
   background-repeat: no-repeat;
   text-align: center;
   color: var(--white-text-cl);
+}
+
+.hero__address-wrap {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-cl);
+  max-width: 252px;
+}
+
+.hero__address {
+  @extend .contacts__link;
+  text-align: left;
+  font-size: 12px;
 }
 
 .hero__title {
@@ -34,4 +51,11 @@
 
 .hero__wrap > .btn:first-child {
   margin-bottom: 24px;
+}
+
+.hero__social {
+  @extend .social__list;
+  position: absolute;
+  bottom: 20;
+  left: 15;
 }
