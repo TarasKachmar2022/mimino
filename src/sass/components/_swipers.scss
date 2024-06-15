@@ -1,0 +1,157 @@
+.swiper-rtl {
+  // position: relative;
+  left: 69px;
+  // width: 330px;
+  height: 297px;
+  overflow: hidden;
+
+  & .swiper-slide.swiper-slide-prev,
+  & .swiper-slide.swiper-slide-active,
+  & .swiper-slide.swiper-slide-next {
+    width: 245;
+    height: 245px;
+    // overflow: hidden;
+  }
+
+  & .swiper-button__wraper {
+    position: absolute;
+    bottom: 0;
+    left: 220;
+    display: flex;
+    gap: 32px;
+  }
+
+  & .swiper-button__next {
+    background-image: url(./../images/svg/arrow-left-dark.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    }
+  }
+
+  & .swiper-button__prev {
+    background-image: url(./../images/svg/arrow-right-dark.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    }
+  }
+}
+
+.swiper-ltr {
+  // position: relative;
+  right: 69px;
+  // width: 330px;
+  height: 297px;
+  overflow: hidden;
+
+  & .swiper-slide.swiper-slide-prev,
+  & .swiper-slide.swiper-slide-active,
+  & .swiper-slide.swiper-slide-next {
+    width: 245;
+    height: 245px;
+    // overflow: hidden;
+  }
+
+  & .swiper-button__wraper {
+    position: absolute;
+    bottom: 0;
+    left: 200;
+    display: flex;
+    gap: 32px;
+  }
+
+  & .swiper-button__next {
+    background-image: url(./../images/svg/arrow-left-dark.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    }
+  }
+
+  & .swiper-button__prev {
+    background-image: url(./../images/svg/arrow-right-dark.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    }
+  }
+}
+
+.details-restaurant__swiper {
+  // position: relative;
+  left: 25px;
+  // width: 330px;
+  height: 322px;
+
+  & .swiper-slide.swiper-slide-prev,
+  & .swiper-slide.swiper-slide-active,
+  & .swiper-slide.swiper-slide-next {
+    width: 274;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  & .swiper-button__wraper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  & .swiper-button__next {
+    background-image: url(./../images/svg/arrow-left-white.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    }
+  }
+
+  & .swiper-button__prev {
+    background-image: url(./../images/svg/arrow-right-white.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    }
+  }
+}
+
+.details-hotel__swiper {
+  // position: relative;
+  right: 25px;
+  // width: 330px;
+  height: 322px;
+
+  & .swiper-slide.swiper-slide-prev,
+  & .swiper-slide.swiper-slide-active,
+  & .swiper-slide.swiper-slide-next {
+    width: 274;
+    height: 270px;
+    overflow: hidden;
+  }
+
+  & .swiper-button__wraper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  & .swiper-button__next {
+    background-image: url(./../images/svg/arrow-left-white.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    }
+  }
+
+  & .swiper-button__prev {
+    background-image: url(./../images/svg/arrow-right-white.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    }
+  }
+}

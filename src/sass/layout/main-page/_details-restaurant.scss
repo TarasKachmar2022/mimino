@@ -38,50 +38,56 @@
   margin-bottom: 48px;
 }
 
-.details-rest {
-  &.slider-right {
-    margin-right: -15px;
-    margin-bottom: 32px;
-    margin-left: 25px;
-    max-width: 374px;
-    height: 322px;
-  }
-
-  & .slick-track {
-    height: 270px;
-    margin-bottom: 16px;
-  }
-
-  & .slider-item {
-    width: 274px;
-    height: 270px;
-    overflow: hidden;
-    margin-right: 25px;
-  }
-
-  & .slick-arrow {
-    bottom: 0;
-    left: 0;
-  }
-
-  & .slick-arrow.slick-prev {
-    right: 81;
-    background-image: url(./../images/svg/arrow-left-white.svg);
-
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
-    }
-  }
-
-  & .slick-arrow.slick-next {
-    left: 64;
-    background-image: url(./../images/svg/arrow-right-white.svg);
-
-    &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
-    }
-  }
+.details-restaurant__slider {
+  width: 374px;
+  // margin-right: -184px;
+  margin-bottom: 32px;
 }
+
+// .details-rest {
+//   &.slider-right {
+//     margin-right: -15px;
+//     margin-bottom: 32px;
+//     margin-left: 25px;
+//     max-width: 374px;
+//     height: 322px;
+//   }
+
+//   & .slick-track {
+//     height: 270px;
+//     margin-bottom: 16px;
+//   }
+
+//   & .slider-item {
+//     width: 274px;
+//     height: 270px;
+//     overflow: hidden;
+//     margin-right: 25px;
+//   }
+
+//   & .slick-arrow {
+//     bottom: 0;
+//     left: 0;
+//   }
+
+//   & .slick-arrow.slick-prev {
+//     right: 81;
+//     background-image: url(./../images/svg/arrow-left-white.svg);
+
+//     &:hover {
+//       background-image: url(./../images/svg/arrow-left-hovered.svg);
+//     }
+//   }
+
+//   & .slick-arrow.slick-next {
+//     left: 64;
+//     background-image: url(./../images/svg/arrow-right-white.svg);
+
+//     &:hover {
+//       background-image: url(./../images/svg/arrow-right-hovered.svg);
+//     }
+//   }
+// }
 
 .details-restaurant__btn-wrap > .btn:first-child {
   margin-bottom: 24px;

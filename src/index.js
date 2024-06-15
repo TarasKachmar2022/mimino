@@ -1,1 +1,2 @@
-import './js/slick';
+import './js/header-scroll';
+import './js/swiper';

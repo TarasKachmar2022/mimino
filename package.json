@@ -18,9 +18,8 @@
     "url": "https://github.com/TarasKachmar2022/mimino.git/issues"
   },
   "dependencies": {
-    "jquery": "^3.7.1",
     "modern-normalize": "^1.1.0",
-    "slick-carousel": "^1.8.1"
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
