@@ -49,6 +49,10 @@
   display: block;
 }
 
+.about-restaurant__img {
+  @extend %section-img;
+}
+
 .about-restaurant__slider {
   width: 330px;
   // margin-right: -130px;

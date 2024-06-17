@@ -35,3 +35,8 @@
   letter-spacing: 0.02em;
   color: var(--section-titles-white-text-cl);
 }
+
+%section-img {
+  border-radius: 2px;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}

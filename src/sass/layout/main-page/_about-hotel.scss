@@ -47,6 +47,10 @@
   margin-left: auto;
 }
 
+.about-hotel__img {
+  @extend %section-img;
+}
+
 .about-hotel__slider {
   margin-left: -130px;
 }
