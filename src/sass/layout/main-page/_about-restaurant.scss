@@ -73,6 +73,10 @@
     margin-left: 0;
     width: 400px;
   }
+
+  @include desktop {
+    width: 460px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n) {
@@ -83,6 +87,10 @@
 
   @include tablet {
     gap: 48px;
+  }
+
+  @include desktop {
+    gap: 32px;
   }
 }
 
@@ -95,6 +103,10 @@
   @include tablet {
     max-width: 305px;
   }
+
+  @include desktop {
+    margin-top: -110px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__img {
@@ -103,6 +115,11 @@
   @include tablet {
     margin-top: -20px;
     width: 350px;
+  }
+
+  @include desktop {
+    margin-top: -50px;
+    width: 460px;
   }
 }
 
@@ -118,6 +135,11 @@
     margin-left: 488px;
     width: 428px;
     margin-top: -30px;
+  }
+
+  @include desktop {
+    margin-left: 681px;
+    margin-top: -120px;
   }
 }
 
