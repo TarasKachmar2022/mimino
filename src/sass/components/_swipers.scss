@@ -1,9 +1,15 @@
 .swiper-rtl {
   // position: relative;
-  left: 69px;
   // width: 330px;
-  height: 297px;
   overflow: hidden;
+
+  @media screen and (max-width: 1023px) {
+    height: 297px;
+  }
+
+  @include tablet {
+    height: 258px;
+  }
 
   & .swiper-slide.swiper-slide-prev,
   & .swiper-slide.swiper-slide-active,
@@ -11,14 +17,26 @@
     width: 245;
     height: 245px;
     // overflow: hidden;
+
+    @include tablet {
+      width: 194px;
+      height: 194px;
+    }
   }
 
   & .swiper-button__wraper {
     position: absolute;
     bottom: 0;
-    left: 220;
     display: flex;
     gap: 32px;
+
+    @media screen and (max-width: 1023px) {
+      left: 220;
+    }
+
+    @include tablet {
+      right: 0;
+    }
   }
 
   & .swiper-button__next {

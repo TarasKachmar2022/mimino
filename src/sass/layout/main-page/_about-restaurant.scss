@@ -2,33 +2,77 @@
   @include section(16, 20);
   position: relative;
   background-color: var(--bg-lemon-cl);
+
+  @include tablet {
+    @include section(120, 32);
+  }
+
+  @include desktop {
+    @include section(120, 50);
+  }
 }
 
 .about-restaurant__uppertitle {
   @extend %uppertitle;
   margin-bottom: 12px;
+
+  @include tablet {
+    margin-bottom: 4px;
+  }
 }
 
 .about-restaurant__logo {
   @extend .logo;
   @extend .logo--dark;
   font-size: 40px;
+  line-height: 1.2;
   margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    line-height: calc(77 / 64);
+    margin-bottom: 24px;
+  }
 }
 
 .about-restaurant__item {
   margin-bottom: 32px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 0;
+  }
 }
 
 .about-restaurant__item:nth-child(2n + 1) > .about-restaurant__descr {
   @extend %descr;
-  margin-bottom: 28px;
-  max-width: 258px;
+
+  @include mobile {
+    margin-bottom: 28px;
+    max-width: 258px;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 26px;
+    max-width: 439px;
+  }
+
+  @include desktop {
+    margin-right: 37px;
+    max-width: 518px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n + 1) > .about-restaurant__img {
   display: block;
   margin-left: auto;
+
+  @include tablet {
+    margin-top: -296px;
+    margin-left: 0;
+    width: 400px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n) {
@@ -36,6 +80,10 @@
   align-items: center;
   flex-direction: row-reverse;
   gap: 20px;
+
+  @include tablet {
+    gap: 48px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__descr {
@@ -43,10 +91,19 @@
   color: var(--accent-descr-text-cl);
   max-width: 156px;
   margin-right: auto;
+
+  @include tablet {
+    max-width: 305px;
+  }
 }
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__img {
   display: block;
+
+  @include tablet {
+    margin-top: -20px;
+    width: 350px;
+  }
 }
 
 .about-restaurant__img {
@@ -54,11 +111,17 @@
 }
 
 .about-restaurant__slider {
+  margin-left: 69px;
   width: 330px;
-  // margin-right: -130px;
+
+  @include tablet {
+    margin-left: 488px;
+    width: 428px;
+    margin-top: -30px;
+  }
 }
 
-// .swiper-img {
-//   width: 245px;
-//   height: 245px;
-// }
+.swiper-img {
+  //   width: 245px;
+  //   height: 245px;
+}

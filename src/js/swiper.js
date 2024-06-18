@@ -30,6 +30,7 @@ const rtl = new Swiper('.swiper-rtl', {
   speed: 2000,
   slidesPerView: 1.3,
   spaceBetween: 20,
+  // Infinity: true,
   loop: true,
   autoplay: {
     delay: 2000,
@@ -41,6 +42,7 @@ const rtl = new Swiper('.swiper-rtl', {
   },
   breakpoints: {
     1024: {
+      slidesPerView: 2,
       spaceBetween: 40,
     },
   },
