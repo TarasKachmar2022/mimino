@@ -31,7 +31,8 @@
 
   // Gradients
   --btn-gradient: rgba(0, 0, 0, 0.4);
-  --hero-gradient: rgba(0, 0, 0, 0.6);
+  --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
   // Duration
   --duration: 250ms;
   // Timing function
