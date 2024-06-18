@@ -1,5 +1,6 @@
-.hero {
+.hero__container {
   @include section(181, 102);
+  @extend .container;
   position: relative;
   background-color: rgba(0, 0, 0, 0.65);
   background-image: linear-gradient(
@@ -13,38 +14,42 @@
   background-repeat: no-repeat;
   text-align: center;
   color: var(--white-text-cl);
-}
 
-.hero__address-wrap {
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--accent-cl);
-  max-width: 252px;
-}
+  @include tablet {
+    @include section(188, 64);
+  }
 
-.hero__address {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  letter-spacing: 0.02em;
-  text-align: left;
-  font-size: 12px;
-  padding: 8px;
+  @include desktop {
+    @include section(164, 65);
+  }
 }
 
 .hero__title {
   @extend %main-title;
   margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    margin-bottom: 32px;
+  }
 }
 
 .hero__subtitle {
   @extend %main-subtitle;
   margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 56px;
+  }
+
+  @include desktop {
+    margin-bottom: 64px;
+  }
 }
+
 .hero__descr {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -52,15 +57,92 @@
   line-height: calc(38 / 32);
   letter-spacing: 0.05em;
   margin-bottom: 113px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: calc(43 / 36);
+    margin-bottom: 137px;
+  }
 }
 
-.hero__wrap > .btn:first-child {
-  margin-bottom: 24px;
+.hero__wrapper {
+  @include tablet {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+.hero__address {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-cl);
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--hero-address-cl);
+  padding: 8px;
+
+  @media screen and (max-width: 1023px) {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    min-width: 220px;
+    min-height: 48px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    min-width: 285px;
+    min-height: 56px;
+  }
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @include desktop {
+    gap: 60px;
+  }
+}
+
+.hero__btn {
+  @extend .btn;
+
+  @include desktop {
+    min-width: 258px;
+  }
+}
+
+.hero__wrap > .hero__btn:last-child {
+  min-width: 232px;
+
+  @include desktop {
+    min-width: 254px;
+  }
 }
 
 .hero__social {
   @extend .social__list;
   position: absolute;
   bottom: 20;
-  left: 15;
+
+  @include tablet {
+    bottom: 15;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }

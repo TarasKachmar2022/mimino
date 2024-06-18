@@ -4,6 +4,15 @@
   line-height: calc(115 / 96);
   letter-spacing: 0.3em;
   color: var(--logo-white-cl);
+  width: 303;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    font-size: 128px;
+    line-height: calc(154 / 128);
+    width: 404;
+  }
 }
 
 %main-subtitle {
@@ -11,6 +20,11 @@
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.02em;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 %uppertitle {

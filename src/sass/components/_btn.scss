@@ -1,9 +1,13 @@
 .btn {
   @include font(700, 16px, 1.2, 0.02em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--btn-border-cl);
   border-radius: 25px;
   min-width: 236px;
   height: 48px;
   background-color: var(--btn-gradient);
   color: var(--accent-cl);
+  margin: 0 auto;
 }
