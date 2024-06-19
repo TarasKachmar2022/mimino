@@ -6,32 +6,94 @@
   background-repeat: no-repeat;
   text-align: center;
 
-  // mobile screen
-  background-image: var(--hero-gradient),
-    url('../images/main-page/details-restaurant/details-restaurant-bg-img_m.jpg');
-  background-image: var(--hero-gradient),
-    -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img_m.webp')
-          1x);
-  @include retina2 {
+  @media screen and (max-width: 1023px) {
+    // mobile screen
     background-image: var(--hero-gradient),
-      url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_m.jpg');
+      url('../images/main-page/details-restaurant/details-restaurant-bg-img_m.jpg');
     background-image: var(--hero-gradient),
-      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_m.webp')
-            2x);
+      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img_m.webp')
+            1x);
+    @include retina2 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_m.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_m.webp')
+              2x);
+    }
+    @include retina3 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_m.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_m.webp')
+              3x);
+    }
+    @include retina4 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_m.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_m.webp')
+              4x);
+    }
   }
-  @include retina3 {
+
+  @include tablet {
+    // tablet screen
     background-image: var(--hero-gradient),
-      url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_m.jpg');
+      url('../images/main-page/details-restaurant/details-restaurant-bg-img_t.jpg');
     background-image: var(--hero-gradient),
-      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_m.webp')
-            3x);
+      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img_t.webp')
+            1x);
+    @include retina2 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_t.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_t.webp')
+              2x);
+    }
+    @include retina3 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_t.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_t.webp')
+              3x);
+    }
+    @include retina4 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_t.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_t.webp')
+              4x);
+    }
   }
-  @include retina4 {
+
+  @include desktop {
+    // desktop screen
     background-image: var(--hero-gradient),
-      url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_m.jpg');
+      url('../images/main-page/details-restaurant/details-restaurant-bg-img_d.jpg');
     background-image: var(--hero-gradient),
-      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_m.webp')
-            4x);
+      -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img_d.webp')
+            1x);
+    @include retina2 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_d.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@2x_d.webp')
+              2x);
+    }
+    @include retina3 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_d.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@3x_d.webp')
+              3x);
+    }
+    @include retina4 {
+      background-image: var(--hero-gradient),
+        url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_d.jpg');
+      background-image: var(--hero-gradient),
+        -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_d.webp')
+              4x);
+    }
   }
 }
 
