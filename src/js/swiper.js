@@ -86,7 +86,8 @@ const dr = new Swiper('.details-restaurant__swiper', {
   },
   breakpoints: {
     1024: {
-      spaceBetween: 40,
+      slidesPerView: 2.33,
+      spaceBetween: 34,
     },
   },
 });

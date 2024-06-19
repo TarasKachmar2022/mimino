@@ -37,6 +37,8 @@
   }
 
   @include tablet {
+    @include section(48, 40);
+
     // tablet screen
     background-image: var(--hero-gradient),
       url('../images/main-page/details-restaurant/details-restaurant-bg-img_t.jpg');
@@ -101,17 +103,34 @@
   text-align: start;
   max-width: 250px;
   margin-left: auto;
+  margin-bottom: 48px;
+
+  @include tablet {
+    max-width: 610px;
+    margin-bottom: 40px;
+    margin-left: 231px;
+  }
 }
 
 .details-restaurant__logo {
   @extend .logo;
   @extend .logo--white;
   margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
 }
 
 .details-restaurant__title {
   @extend %section-title;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 .details-restaurant__descr {
@@ -119,13 +138,39 @@
   text-align: start;
   color: var(--descr-text-cl);
   max-width: 250px;
-  margin-bottom: 48px;
+
+  @include tablet {
+    max-width: 610px;
+  }
+}
+
+.details-restaurant__wrapper {
+  margin-left: 25px;
+
+  @include tablet {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+  }
 }
 
 .details-restaurant__slider {
   width: 374px;
   // margin-right: -184px;
   margin-bottom: 32px;
+
+  @include tablet {
+    width: 675px;
+    margin-bottom: 0;
+  }
+}
+
+.details-restaurant__btn-wrap {
+  @include tablet {
+    margin-top: auto;
+    margin-right: 29px;
+    margin-bottom: 60px;
+  }
 }
 
 .details-restaurant__btn-wrap > .btn:first-child {
