@@ -11,6 +11,10 @@
     height: 258px;
   }
 
+  @include desktop {
+    height: 322px;
+  }
+
   & .swiper-slide.swiper-slide-prev,
   & .swiper-slide.swiper-slide-active,
   & .swiper-slide.swiper-slide-next {
@@ -21,6 +25,11 @@
     @include tablet {
       width: 194px;
       height: 194px;
+    }
+
+    @include desktop {
+      width: 254px;
+      height: 254px;
     }
   }
 
