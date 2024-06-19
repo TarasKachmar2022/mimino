@@ -1,6 +1,10 @@
 .details-restaurant {
   @include section(24, 40);
   background-color: rgba(0, 0, 0, 0.65);
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 
   // mobile screen
   background-image: var(--hero-gradient),
@@ -29,13 +33,6 @@
       -webkit-image-set(url('../images/main-page/details-restaurant/details-restaurant-bg-img@4x_m.webp')
             4x);
   }
-
-  // background-image: var(--hero-gradient),
-  //   url('../images/main-page/details-restaurant/details-restaurant-bg-img_m.jpg');
-  background-position: center center; // x y
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
 }
 
 .details-restaurant__wrap {
@@ -68,51 +65,6 @@
   // margin-right: -184px;
   margin-bottom: 32px;
 }
-
-// .details-rest {
-//   &.slider-right {
-//     margin-right: -15px;
-//     margin-bottom: 32px;
-//     margin-left: 25px;
-//     max-width: 374px;
-//     height: 322px;
-//   }
-
-//   & .slick-track {
-//     height: 270px;
-//     margin-bottom: 16px;
-//   }
-
-//   & .slider-item {
-//     width: 274px;
-//     height: 270px;
-//     overflow: hidden;
-//     margin-right: 25px;
-//   }
-
-//   & .slick-arrow {
-//     bottom: 0;
-//     left: 0;
-//   }
-
-//   & .slick-arrow.slick-prev {
-//     right: 81;
-//     background-image: url(./../images/svg/arrow-left-white.svg);
-
-//     &:hover {
-//       background-image: url(./../images/svg/arrow-left-hovered.svg);
-//     }
-//   }
-
-//   & .slick-arrow.slick-next {
-//     left: 64;
-//     background-image: url(./../images/svg/arrow-right-white.svg);
-
-//     &:hover {
-//       background-image: url(./../images/svg/arrow-right-hovered.svg);
-//     }
-//   }
-// }
 
 .details-restaurant__btn-wrap > .btn:first-child {
   margin-bottom: 24px;
