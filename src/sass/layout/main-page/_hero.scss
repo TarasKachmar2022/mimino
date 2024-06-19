@@ -9,7 +9,7 @@
   text-align: center;
   color: var(--white-text-cl);
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 1023px) {
     //   // mobile screen
     background-image: var(--hero-gradient),
       url('../images/main-page/hero/hero-bg-img_m.jpg');

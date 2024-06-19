@@ -67,15 +67,16 @@
 .about-restaurant__item:nth-child(2n + 1) > .about-restaurant__img {
   display: block;
   margin-left: auto;
+  max-width: 244px;
 
   @include tablet {
     margin-top: -296px;
     margin-left: 0;
-    width: 400px;
+    max-width: 400px;
   }
 
   @include desktop {
-    width: 460px;
+    max-width: 460px;
   }
 }
 
@@ -111,15 +112,16 @@
 
 .about-restaurant__item:nth-child(2n) > .about-restaurant__img {
   display: block;
+  max-width: 200px;
 
   @include tablet {
     margin-top: -20px;
-    width: 350px;
+    max-width: 350px;
   }
 
   @include desktop {
     margin-top: -50px;
-    width: 460px;
+    max-width: 460px;
   }
 }
 
@@ -129,7 +131,7 @@
 
 .about-restaurant__slider {
   margin-left: 69px;
-  width: 330px;
+  width: 325px;
 
   @include tablet {
     width: 428px;
