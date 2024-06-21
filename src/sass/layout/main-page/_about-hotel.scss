@@ -1,5 +1,9 @@
 .about-hotel {
   @include section(18, 20);
+
+  @include tablet {
+    @include section(120, 32);
+  }
   text-align: right;
   background-color: var(--bg-lemon-cl);
 }
