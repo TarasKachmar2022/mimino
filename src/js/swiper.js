@@ -52,7 +52,6 @@ const dr = new Swiper('.details-restaurant__swiper', {
   modules: [Navigation, Autoplay],
   speed: 4000,
   slidesPerView: 'auto',
-  // initialSlide: 3,
   spaceBetween: 20,
   loop: true,
   autoplay: {

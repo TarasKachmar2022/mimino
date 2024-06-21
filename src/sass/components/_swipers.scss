@@ -136,8 +136,6 @@
 
 .details-restaurant__swiper {
   position: relative;
-  // height: 318px;
-  // height: 330px;
   margin-bottom: 32px;
   overflow: hidden;
 
@@ -146,12 +144,10 @@
   }
 
   @include tablet {
-    // width: 662px;
     margin-bottom: 0;
   }
 
   @include desktop {
-    // width: 838px;
   }
 
   & .swiper-wrapper {
@@ -172,30 +168,7 @@
   & .swiper-slide.swiper-slide-prev,
   & .swiper-slide.swiper-slide-active,
   & .swiper-slide.swiper-slide-next {
-    // width: 274px;
-    // height: 270px;
-    // width: auto;
     height: 270px;
-    // overflow: hidden;
-
-    @include tablet {
-      // width: 274px;
-    }
-  }
-
-  & .swiper-img {
-    display: block;
-    // width: 274px;
-    // height: 270px;
-
-    @include tablet {
-      // width: 270px;
-      // width: auto;
-    }
-
-    @include desktop {
-      // width: auto;
-    }
   }
 
   & .swiper-button__wraper {
