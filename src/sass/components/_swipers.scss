@@ -160,6 +160,7 @@
 
   .swiper-slide {
     width: auto !important;
+    overflow: hidden;
     @include tablet {
     }
   }
