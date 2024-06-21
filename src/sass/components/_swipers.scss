@@ -120,23 +120,82 @@
   }
 }
 
-.details-restaurant__swiper {
-  // position: relative;
-  // width: 330px;
-  height: 330px;
+// Details-restaurant slider
 
+.details-restaurant__box {
   @media screen and (max-width: 1023px) {
-    // left: 25px;
+    margin-left: 25px;
   }
 
+  @include tablet {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+  }
+}
+
+.details-restaurant__swiper {
+  position: relative;
+  // height: 318px;
+  // height: 330px;
+  margin-bottom: 32px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1023px) {
+    width: 374px;
+  }
+
+  @include tablet {
+    // width: 662px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    // width: 838px;
+  }
+
+  & .swiper-wrapper {
+    margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
+  }
+
+  .swiper-slide {
+    width: auto !important;
+    @include tablet {
+    }
+  }
+
+  & .swiper-slide.swiper-slide-duplicate,
   & .swiper-slide.swiper-slide-prev,
   & .swiper-slide.swiper-slide-active,
   & .swiper-slide.swiper-slide-next {
     // width: 274px;
+    // height: 270px;
+    // width: auto;
     height: 270px;
-    width: auto;
-    // height: auto;
-    overflow: hidden;
+    // overflow: hidden;
+
+    @include tablet {
+      // width: 274px;
+    }
+  }
+
+  & .swiper-img {
+    display: block;
+    // width: 274px;
+    // height: 270px;
+
+    @include tablet {
+      // width: 270px;
+      // width: auto;
+    }
+
+    @include desktop {
+      // width: auto;
+    }
   }
 
   & .swiper-button__wraper {
@@ -164,6 +223,22 @@
   }
 }
 
+.details-restaurant__btn-wrap {
+  @include tablet {
+    margin-top: auto;
+    margin-right: 29px;
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-right: 32px;
+  }
+}
+
+.details-restaurant__btn-wrap > .btn:first-child {
+  margin-bottom: 24px;
+}
+
 .details-hotel__swiper {
   // position: relative;
   right: 25px;
@@ -173,8 +248,8 @@
   & .swiper-slide.swiper-slide-prev,
   & .swiper-slide.swiper-slide-active,
   & .swiper-slide.swiper-slide-next {
-    width: 274;
-    height: 270px;
+    // width: 274;
+    // height: 270px;
     overflow: hidden;
   }
 

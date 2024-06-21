@@ -131,6 +131,10 @@
   @include tablet {
     font-size: 24px;
   }
+
+  @include tablet {
+    margin-bottom: 8px;
+  }
 }
 
 .details-restaurant__descr {
@@ -142,37 +146,4 @@
   @include tablet {
     max-width: 610px;
   }
-}
-
-.details-restaurant__wrapper {
-  margin-left: 25px;
-
-  @include tablet {
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
-  }
-}
-
-.details-restaurant__slider {
-  width: 374px;
-  // margin-right: -184px;
-  margin-bottom: 32px;
-
-  @include tablet {
-    width: 675px;
-    margin-bottom: 0;
-  }
-}
-
-.details-restaurant__btn-wrap {
-  @include tablet {
-    margin-top: auto;
-    margin-right: 29px;
-    margin-bottom: 60px;
-  }
-}
-
-.details-restaurant__btn-wrap > .btn:first-child {
-  margin-bottom: 24px;
 }
