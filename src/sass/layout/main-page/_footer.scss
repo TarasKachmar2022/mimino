@@ -1,12 +1,68 @@
 .footer {
   @include section(40, 40);
   background-color: var(--footer-bg-cl);
-  // color: var(--accent-cl);
+
+  @include tablet {
+    @include section(80, 80);
+  }
 }
 
 .footer__logo {
   @extend .logo;
+  font-size: 40px;
+
+  @include tablet {
+    font-size: 64px;
+  }
 }
 
-.footer__wrap {
+.footer__nav-list {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+
+  @include tablet {
+    margin-top: -40px;
+  }
+
+  & .site-nav__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__list {
+  &.social__list {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.footer__social {
+  &.social__list {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+
+    @include tablet {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 12px;
+    }
+  }
+
+  & .footer__item {
+    border: 0.5px solid var(--accent-cl);
+    border-style: inset;
+    padding: 7px 10px;
+  }
+
+  & .social__link {
+    display: flex;
+    align-items: center;
+  }
+
+  & span {
+    margin-right: 15px;
+  }
 }
