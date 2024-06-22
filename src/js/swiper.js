@@ -28,13 +28,13 @@ const rtl = new Swiper('.swiper-rtl', {
 const ltr = new Swiper('.swiper-ltr', {
   modules: [Navigation, Autoplay],
   speed: 2000,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   initialSlide: 3,
   spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2000,
-    reverseDirection: true,
+    // reverseDirection: true,
     disableOnInteraction: false,
   },
   navigation: {

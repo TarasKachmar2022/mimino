@@ -57,10 +57,6 @@
     @media screen and (max-width: 1023px) {
       left: 220;
     }
-
-    @include tablet {
-      right: 0;
-    }
   }
 
   & .swiper-button__next {
@@ -84,8 +80,9 @@
 
 .slider__box {
   @media screen and (max-width: 1023px) {
-    margin-left: -195px;
-    width: 510px;
+    margin-left: -15px;
+    // width: 510px;
+    width: 330px;
   }
 
   @include tablet {
@@ -119,6 +116,19 @@
     }
   }
 
+  & .swiper-slide {
+    width: 245px !important;
+    overflow: hidden;
+
+    @include tablet {
+      width: 194px !important;
+    }
+
+    @include desktop {
+      width: 254px !important;
+    }
+  }
+
   & .swiper-button__wraper {
     position: absolute;
     bottom: 0;
@@ -126,7 +136,7 @@
     gap: 32px;
 
     @media screen and (max-width: 1023px) {
-      left: 195;
+      left: 15;
     }
 
     @include tablet {
@@ -135,18 +145,18 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-left-dark.svg);
-
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
-    }
-  }
-
-  & .swiper-button__prev {
     background-image: url(./../images/svg/arrow-right-dark.svg);
 
     &:hover {
       background-image: url(./../images/svg/arrow-right-hovered.svg);
+    }
+  }
+
+  & .swiper-button__prev {
+    background-image: url(./../images/svg/arrow-left-dark.svg);
+
+    &:hover {
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
     }
   }
 }
@@ -236,7 +246,7 @@
   }
 
   @include desktop {
-    margin-left: -33px;
+    // margin-left: -33px;
   }
 }
 
@@ -246,7 +256,7 @@
   height: auto;
 
   @media screen and (max-width: 1023px) {
-    width: 383px;
+    width: 374px;
   }
 
   @include tablet {

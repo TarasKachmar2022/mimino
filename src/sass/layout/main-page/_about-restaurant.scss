@@ -136,7 +136,7 @@
   @include tablet {
     width: 428px;
     margin-top: -30px;
-    margin-left: 488px;
+    margin-left: auto;
   }
 
   @include desktop {
@@ -146,7 +146,8 @@
   }
 }
 
-// .swiper-img {
-//   width: 245px;
-//   height: 245px;
-// }
+.about-restaurant__wrap {
+  @include tablet {
+    right: 0;
+  }
+}
