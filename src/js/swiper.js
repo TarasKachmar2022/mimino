@@ -89,7 +89,10 @@ const dh = new Swiper('.details-hotel__swiper', {
   },
   breakpoints: {
     1024: {
-      spaceBetween: 40,
+      spaceBetween: 34,
+    },
+    1280: {
+      spaceBetween: 86,
     },
   },
 });

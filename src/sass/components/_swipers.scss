@@ -227,19 +227,51 @@
 
 // Details-hotel slider
 
-.details-hotel__swiper {
-  // position: relative;
-  right: 25px;
-  // width: 330px;
-  height: 322px;
-
-  & .swiper-slide.swiper-slide-prev,
-  & .swiper-slide.swiper-slide-active,
-  & .swiper-slide.swiper-slide-next {
-    // width: 274;
-    // height: 270px;
-    overflow: hidden;
+.details-hotel__box {
+  @media screen and (max-width: 1023px) {
+    // margin-left: 25px;
   }
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.details-hotel__swiper {
+  position: relative;
+  margin-bottom: 32px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1023px) {
+    width: 374px;
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  & .swiper-wrapper {
+    margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
+  }
+
+  & .swiper-slide {
+    width: auto !important;
+    overflow: hidden;
+    @include tablet {
+    }
+  }
+
+  // & .swiper-slide.swiper-slide-prev,
+  // & .swiper-slide.swiper-slide-active,
+  // & .swiper-slide.swiper-slide-next {
+  //   // width: 274;
+  //   // height: 270px;
+  //   overflow: hidden;
+  // }
 
   & .swiper-button__wraper {
     position: absolute;
