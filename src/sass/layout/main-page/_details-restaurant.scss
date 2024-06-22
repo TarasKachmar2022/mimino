@@ -148,3 +148,19 @@
     max-width: 610px;
   }
 }
+
+.details-restaurant__btn-wrap {
+  @include tablet {
+    margin-top: auto;
+    margin-right: 29px;
+    margin-bottom: 60px;
+  }
+
+  @include desktop {
+    margin-right: 32px;
+  }
+}
+
+.details-restaurant__btn-wrap > .btn:first-child {
+  margin-bottom: 24px;
+}

@@ -66,8 +66,11 @@
 
 .about-hotel__item:nth-child(2n) {
   display: flex;
-  // align-items: center;
   gap: 21px;
+
+  @media screen and (max-width: 1023px) {
+    align-items: center;
+  }
 }
 
 .about-hotel__item:nth-child(2n) > .about-hotel__descr {

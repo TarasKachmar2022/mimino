@@ -1,6 +1,6 @@
+// Slider right to left
+
 .swiper-rtl {
-  // position: relative;
-  // width: 330px;
   overflow: hidden;
 
   @media screen and (max-width: 1023px) {
@@ -80,19 +80,16 @@
   }
 }
 
-// About-hotel slider
+// Slider left to right
 
 .slider__box {
-  // margin-left: -130px;
   @media screen and (max-width: 1023px) {
-    width: 510px;
-    overflow: hidden;
     margin-left: -195px;
+    width: 510px;
   }
 
   @include tablet {
     width: 428px;
-    // margin-left: 0;
   }
 
   @include desktop {
@@ -101,14 +98,9 @@
 }
 
 .swiper-ltr {
-  // position: relative;
-  // right: 20px;
-  // width: 330px;
-  // height: 297px;
   overflow: hidden;
 
   @media screen and (max-width: 1023px) {
-    // width: 330px;
   }
 
   @include tablet {
@@ -126,14 +118,6 @@
       margin-bottom: 64px;
     }
   }
-
-  // .swiper-slide {
-  //   // width: 245px !important;
-  //   overflow: hidden;
-  //   // @include tablet {
-  //   //   width: 194px !important;
-  //   // }
-  // }
 
   & .swiper-button__wraper {
     position: absolute;
@@ -194,9 +178,6 @@
     margin-bottom: 0;
   }
 
-  @include desktop {
-  }
-
   & .swiper-wrapper {
     margin-bottom: 48px;
 
@@ -205,7 +186,7 @@
     }
   }
 
-  .swiper-slide {
+  & .swiper-slide {
     width: auto !important;
     overflow: hidden;
     @include tablet {
@@ -242,22 +223,6 @@
       background-image: url(./../images/svg/arrow-right-hovered.svg);
     }
   }
-}
-
-.details-restaurant__btn-wrap {
-  @include tablet {
-    margin-top: auto;
-    margin-right: 29px;
-    margin-bottom: 60px;
-  }
-
-  @include desktop {
-    margin-right: 32px;
-  }
-}
-
-.details-restaurant__btn-wrap > .btn:first-child {
-  margin-bottom: 24px;
 }
 
 // Details-hotel slider
