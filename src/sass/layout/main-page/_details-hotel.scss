@@ -111,6 +111,7 @@
 .details-hotel__logo {
   @extend .logo;
   @extend .logo--white;
+  font-size: 40px;
   margin-bottom: 12px;
 
   @include tablet {
@@ -126,7 +127,7 @@
 
   @include tablet {
     font-size: 24px;
-    margin-right: 15px;
+    margin-right: 17px;
     margin-bottom: 8px;
   }
 }
@@ -155,6 +156,7 @@
 
 .details-hotel__btn-wrap {
   margin-top: auto;
+  margin-bottom: 56px;
 }
 
 .details-hotel__btn-wrap > .btn:not(:last-child) {
@@ -162,9 +164,8 @@
 }
 
 .details-hotel__slider {
-  margin-left: -184px;
-
   @media screen and (max-width: 1023px) {
+    margin-right: 25px;
     margin-bottom: 32px;
   }
 

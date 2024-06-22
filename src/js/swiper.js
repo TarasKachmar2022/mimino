@@ -80,7 +80,7 @@ const dh = new Swiper('.details-hotel__swiper', {
   loop: true,
   autoplay: {
     delay: 3000,
-    reverseDirection: true,
+    // reverseDirection: true,
     disableOnInteraction: false,
   },
   navigation: {

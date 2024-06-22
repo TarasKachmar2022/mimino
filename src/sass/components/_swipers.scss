@@ -229,25 +229,33 @@
 
 .details-hotel__box {
   @media screen and (max-width: 1023px) {
-    // margin-left: 25px;
   }
 
   @include tablet {
     display: flex;
   }
+
+  @include desktop {
+    margin-left: -33px;
+  }
 }
 
 .details-hotel__swiper {
   position: relative;
-  margin-bottom: 32px;
   overflow: hidden;
+  height: auto;
 
   @media screen and (max-width: 1023px) {
-    width: 374px;
+    width: 383px;
   }
 
   @include tablet {
     margin-bottom: 0;
+    width: 662px;
+  }
+
+  @include desktop {
+    width: 874px;
   }
 
   & .swiper-wrapper {
@@ -260,18 +268,11 @@
 
   & .swiper-slide {
     width: auto !important;
+    height: 270px !important;
     overflow: hidden;
     @include tablet {
     }
   }
-
-  // & .swiper-slide.swiper-slide-prev,
-  // & .swiper-slide.swiper-slide-active,
-  // & .swiper-slide.swiper-slide-next {
-  //   // width: 274;
-  //   // height: 270px;
-  //   overflow: hidden;
-  // }
 
   & .swiper-button__wraper {
     position: absolute;
@@ -282,18 +283,16 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-left-white.svg);
-
+    background-image: url(./../images/svg/arrow-right-white.svg);
     &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
+      background-image: url(./../images/svg/arrow-right-hovered.svg);
     }
   }
 
   & .swiper-button__prev {
-    background-image: url(./../images/svg/arrow-right-white.svg);
-
+    background-image: url(./../images/svg/arrow-left-white.svg);
     &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
+      background-image: url(./../images/svg/arrow-left-hovered.svg);
     }
   }
 }
