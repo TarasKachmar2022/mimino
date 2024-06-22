@@ -30,7 +30,6 @@
 %uppertitle {
   font-family: var(--secondary-font);
   font-size: 20px;
-  line-height: 1.2;
   letter-spacing: 0;
   color: var(--uppertitle-text-cl);
 
@@ -43,12 +42,10 @@
 %descr {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
 
   @include tablet {
     font-size: 16px;
-    line-height: 1.2;
   }
 }
 

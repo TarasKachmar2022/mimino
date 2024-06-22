@@ -80,27 +80,74 @@
   }
 }
 
+// About-hotel slider
+
+.slider__box {
+  // margin-left: -130px;
+  @media screen and (max-width: 1023px) {
+    width: 510px;
+    overflow: hidden;
+    margin-left: -195px;
+  }
+
+  @include tablet {
+    width: 428px;
+    // margin-left: 0;
+  }
+
+  @include desktop {
+    width: 548px;
+  }
+}
+
 .swiper-ltr {
   // position: relative;
-  right: 69px;
+  // right: 20px;
   // width: 330px;
-  height: 297px;
+  // height: 297px;
   overflow: hidden;
 
-  & .swiper-slide.swiper-slide-prev,
-  & .swiper-slide.swiper-slide-active,
-  & .swiper-slide.swiper-slide-next {
-    width: 245px;
-    height: 245px;
-    // overflow: hidden;
+  @media screen and (max-width: 1023px) {
+    // width: 330px;
   }
+
+  @include tablet {
+    margin-top: -60px;
+  }
+
+  @include desktop {
+    margin-top: -211px;
+  }
+
+  & .swiper-wrapper {
+    margin-bottom: 52px;
+
+    @include tablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  // .swiper-slide {
+  //   // width: 245px !important;
+  //   overflow: hidden;
+  //   // @include tablet {
+  //   //   width: 194px !important;
+  //   // }
+  // }
 
   & .swiper-button__wraper {
     position: absolute;
     bottom: 0;
-    left: 200;
     display: flex;
     gap: 32px;
+
+    @media screen and (max-width: 1023px) {
+      left: 195;
+    }
+
+    @include tablet {
+      left: 0;
+    }
   }
 
   & .swiper-button__next {
@@ -212,6 +259,8 @@
 .details-restaurant__btn-wrap > .btn:first-child {
   margin-bottom: 24px;
 }
+
+// Details-hotel slider
 
 .details-hotel__swiper {
   // position: relative;

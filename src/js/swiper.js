@@ -30,7 +30,7 @@ const ltr = new Swiper('.swiper-ltr', {
   speed: 2000,
   slidesPerView: 2,
   initialSlide: 3,
-  spaceBetween: 25,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 2000,
