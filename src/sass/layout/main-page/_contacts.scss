@@ -1,12 +1,36 @@
 .contacts {
   @include section(36, 32);
   background-color: var(--bg-lemon-cl);
+
+  @include tablet {
+    @include section(69, 40);
+  }
+
+  @include desktop {
+    @include section(64, 74);
+  }
+}
+
+.contacts__container {
+  @include tablet {
+    display: flex;
+  }
 }
 
 .contacts__logo {
   @extend .logo;
   @extend .logo--dark;
+  font-size: 40px;
   margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    margin-bottom: 8px;
+  }
+
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__title {
@@ -14,16 +38,36 @@
   font-size: 16px;
   color: var(--main-text-cl);
   margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 52px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .contacts__list {
-  margin-bottom: 32px;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__item {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 16px;
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
 }
 
 .contacts__item > p {
@@ -33,6 +77,14 @@
   color: var(--accent-descr-text-cl);
 }
 
+.contacts__item:first-child {
+  margin-bottom: 24px;
+}
+
+.contacts__item:nth-child(2) {
+  margin-bottom: 48px;
+}
+
 .contacts__item:first-child > p {
   margin-right: 21px;
 }
@@ -40,8 +92,16 @@
 .contacts__item:last-child > a {
   font-size: 16px;
   letter-spacing: 0.01em;
-  margin-left: 122px;
   width: 260px;
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 122px;
+    padding-right: 20px;
+  }
+
+  @include tablet {
+    width: 285px;
+  }
 }
 
 .contacts__item:first-child > .contacts__link,
@@ -50,6 +110,12 @@
   border-style: solid;
   border-color: var(--accent-cl);
   background-color: #fff;
+}
+
+.contacts-list__item {
+  @include tablet {
+    margin-bottom: 8px;
+  }
 }
 
 .contacts__link {
@@ -76,5 +142,22 @@
   border-style: solid;
   border-color: var(--accent-cl);
   background-color: #fff;
-  margin-left: 54px;
+
+  @media screen and (max-width: 1023px) {
+    margin-left: 54px;
+  }
+}
+
+.contacts__map {
+  @include tablet {
+    width: 535px;
+    height: 430px;
+    margin-left: auto;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  }
+
+  @include desktop {
+    width: 634px;
+    height: 430px;
+  }
 }
