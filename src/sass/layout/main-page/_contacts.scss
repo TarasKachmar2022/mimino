@@ -39,9 +39,6 @@
   color: var(--main-text-cl);
   margin-bottom: 16px;
 
-  animation: animate__bounce;
-  animation-duration: 2s;
-
   @include tablet {
     margin-bottom: 52px;
   }
@@ -74,7 +71,7 @@
 }
 
 .contacts__item > p {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   font-size: 20px;
   line-height: calc(24 / 20);
   color: var(--accent-descr-text-cl);
@@ -112,7 +109,7 @@
   border-width: 1px;
   border-style: solid;
   border-color: var(--accent-cl);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .contacts-list__item {

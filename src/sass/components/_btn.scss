@@ -24,3 +24,12 @@
     border-color: var(--btn-border-hovered-cl);
   }
 }
+
+.btn--black {
+  background-color: var(--btn-bg-black-cl);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-bg-hovered-cl);
+  }
+}

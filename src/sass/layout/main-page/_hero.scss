@@ -113,10 +113,6 @@
   @include desktop {
     margin-bottom: 32px;
   }
-
-  &.animate__animated.animate__fadeInUp {
-    --animate-duration: 2s;
-  }
 }
 
 .hero__subtitle {
@@ -130,16 +126,11 @@
   @include desktop {
     margin-bottom: 64px;
   }
-
-  &.animate__animated.animate__fadeInUp {
-    // --animate-duration: 2s;
-    --animate-delay: 1s;
-  }
 }
 
 .hero__descr {
   font-family: var(--secondary-font);
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   font-size: 32px;
   line-height: calc(38 / 32);
   letter-spacing: 0.05em;
@@ -149,11 +140,6 @@
     font-size: 36px;
     line-height: calc(43 / 36);
     margin-bottom: 137px;
-  }
-
-  &.animate__animated.animate__fadeInUp {
-    // --animate-duration: 2s;
-    --animate-delay: 2s;
   }
 }
 
