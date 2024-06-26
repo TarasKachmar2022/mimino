@@ -5,9 +5,8 @@
 }
 
 .site-nav__list {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   font-size: 20px;
-  line-height: calc(24 / 20);
   letter-spacing: 0.02em;
 }
 
