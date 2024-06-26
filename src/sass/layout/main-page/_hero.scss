@@ -132,13 +132,11 @@
   font-family: var(--secondary-font);
   font-weight: var(--fw-bold);
   font-size: var(--fs-hero-descr-m);
-  line-height: calc(38 / 32);
-  letter-spacing: 0.05em;
+  letter-spacing: var(--ls-hero-descr);
   margin-bottom: 113px;
 
   @include tablet {
     font-size: var(--fs-hero-descr-t);
-    line-height: calc(43 / 36);
     margin-bottom: 137px;
   }
 }
@@ -160,7 +158,7 @@
   border-color: var(--accent-cl);
   font-size: var(--fs-hero-address-m);
   line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  letter-spacing: var(--ls-hero-address);
   color: var(--hero-address-cl);
   padding: 8px;
   transition-property: color;

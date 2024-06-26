@@ -25,7 +25,6 @@
   @extend .logo;
   @extend .logo--dark;
   font-size: var(--fs-section-logo-m);
-  line-height: 1.2;
   margin-bottom: 12px;
 
   @include tablet {

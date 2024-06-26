@@ -1,8 +1,7 @@
 %main-title {
   font-family: var(--logo-font);
   font-size: var(--fs-main-title-m);
-  line-height: calc(115 / 96);
-  letter-spacing: 0.3em;
+  letter-spacing: var(--ls-main-title);
   color: var(--logo-white-cl);
   width: 303;
   margin-right: auto;
@@ -10,7 +9,6 @@
 
   @include tablet {
     font-size: var(--fs-main-title-t);
-    line-height: calc(154 / 128);
     width: 404;
   }
 }
@@ -27,7 +25,7 @@
 %uppertitle {
   font-family: var(--secondary-font);
   font-size: var(--fs-uppertitle-m);
-  letter-spacing: 0;
+  letter-spacing: var(--ls-uppertitle);
   color: var(--uppertitle-text-cl);
 
   @include tablet {

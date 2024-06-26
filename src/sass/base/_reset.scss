@@ -4,7 +4,7 @@
 // }
 body {
   font-family: var(--main-font);
-  line-height: 1.2;
+  line-height: var(--lh);
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--main-text-cl);
@@ -18,7 +18,7 @@ h5,
 h6,
 p {
   margin: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--ls-main);
 }
 
 ul,
