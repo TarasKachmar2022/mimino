@@ -63,13 +63,17 @@
   font-weight: 600;
   color: var(--accent-cl);
   margin-right: 3px;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-hovered-cl);
+  }
 
   @include tablet {
     margin-right: 32px;
-  }
-
-  &:hover {
-    color: var(--accent-hovered-cl);
   }
 }
 
@@ -112,14 +116,17 @@
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
   color: var(--header-number-cl);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
 
   @include tablet {
     display: block;
-
-    &:hover,
-    &:focus {
-      color: var(--accent-cl);
-    }
   }
 }
 

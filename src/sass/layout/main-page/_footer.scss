@@ -24,10 +24,10 @@
   @include tablet {
     margin-top: -40px;
   }
+}
 
-  & .site-nav__item:not(:last-child) {
-    margin-bottom: 16px;
-  }
+.site-nav__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .footer__list.social__list {
@@ -55,6 +55,9 @@
     border: 0.5px solid var(--accent-cl);
     border-style: inset;
     padding: 7px 10px;
+    transition-property: border-color, color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
     &:hover .social__icons,
     &:focus .social__icons,

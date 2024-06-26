@@ -17,6 +17,9 @@
 
 .site-nav__link {
   color: var(--accent-cl);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 
   &:hover {
     color: var(--accent-hovered-cl);

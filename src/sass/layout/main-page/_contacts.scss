@@ -128,6 +128,14 @@
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
   padding: 8px;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
 }
 
 .contacts__icon {

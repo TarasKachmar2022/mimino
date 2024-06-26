@@ -5,8 +5,12 @@
 
 .social__link {
   color: var(--accent-cl);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--accent-hovered-cl);
   }
 }

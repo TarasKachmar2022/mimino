@@ -177,6 +177,14 @@
   letter-spacing: 0.01em;
   color: var(--hero-address-cl);
   padding: 8px;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
 
   @media screen and (max-width: 1023px) {
     position: absolute;

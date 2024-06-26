@@ -60,18 +60,26 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-left-dark.svg);
+    fill: var(--arrow-black-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 
   & .swiper-button__prev {
-    background-image: url(./../images/svg/arrow-right-dark.svg);
+    fill: var(--arrow-black-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 }
@@ -145,18 +153,26 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-right-dark.svg);
+    fill: var(--arrow-black-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 
   & .swiper-button__prev {
-    background-image: url(./../images/svg/arrow-left-dark.svg);
+    fill: var(--arrow-black-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 }
@@ -219,18 +235,26 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-left-white.svg);
+    fill: var(--arrow-white-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 
   & .swiper-button__prev {
-    background-image: url(./../images/svg/arrow-right-white.svg);
+    fill: var(--arrow-white-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
 
-    &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 }
@@ -293,16 +317,26 @@
   }
 
   & .swiper-button__next {
-    background-image: url(./../images/svg/arrow-right-white.svg);
-    &:hover {
-      background-image: url(./../images/svg/arrow-right-hovered.svg);
+    fill: var(--arrow-white-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 
   & .swiper-button__prev {
-    background-image: url(./../images/svg/arrow-left-white.svg);
-    &:hover {
-      background-image: url(./../images/svg/arrow-left-hovered.svg);
+    fill: var(--arrow-white-cl);
+    transition-property: fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
     }
   }
 }

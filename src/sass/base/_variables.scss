@@ -26,17 +26,18 @@
   // Borders colors
   --btn-border-cl: #ffffff;
   --btn-border-hovered-cl: #f3c653;
+  // Arrows colors
+  --arrow-white-cl: #ffffff;
+  --arrow-black-cl: #000000;
   // Accent colors
   --accent-cl: #f3c653;
   --accent-descr-text-cl: #c79002;
   --accent-hovered-cl: #c79002;
-
   // Gradients
   --btn-gradient: rgba(0, 0, 0, 0.4);
   --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
-
   // Duration
-  --duration: 250ms;
+  --duration: 500ms;
   // Timing function
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
