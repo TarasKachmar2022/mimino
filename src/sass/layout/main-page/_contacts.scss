@@ -39,6 +39,9 @@
   color: var(--main-text-cl);
   margin-bottom: 16px;
 
+  animation: animate__bounce;
+  animation-duration: 2s;
+
   @include tablet {
     margin-bottom: 52px;
   }
@@ -149,6 +152,9 @@
 }
 
 .contacts__map {
+  width: 384px;
+  height: 220px;
+
   @include tablet {
     width: 535px;
     height: 430px;
