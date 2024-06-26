@@ -211,18 +211,10 @@
 
 .hero__btn {
   @extend .btn;
-
-  @include desktop {
-    min-width: 258px;
-  }
 }
 
 .hero__wrap > .hero__btn:last-child {
   min-width: 232px;
-
-  @include desktop {
-    min-width: 254px;
-  }
 }
 
 .hero__social {
