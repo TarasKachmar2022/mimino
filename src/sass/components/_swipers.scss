@@ -89,7 +89,6 @@
 .slider__box {
   @media screen and (max-width: 1023px) {
     margin-left: -15px;
-    // width: 510px;
     width: 330px;
   }
 
@@ -215,8 +214,6 @@
   & .swiper-slide {
     width: auto !important;
     overflow: hidden;
-    @include tablet {
-    }
   }
 
   & .swiper-slide.swiper-slide-duplicate,
@@ -262,15 +259,8 @@
 // Details-hotel slider
 
 .details-hotel__box {
-  @media screen and (max-width: 1023px) {
-  }
-
   @include tablet {
     display: flex;
-  }
-
-  @include desktop {
-    // margin-left: -33px;
   }
 }
 

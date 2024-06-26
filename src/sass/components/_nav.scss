@@ -6,8 +6,7 @@
 
 .site-nav__list {
   font-weight: var(--fw-medium);
-  font-size: 20px;
-  letter-spacing: 0.02em;
+  font-size: var(--fs-nav);
 }
 
 .site-nav__item:not(:last-child) {

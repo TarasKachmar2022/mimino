@@ -24,12 +24,12 @@
 .about-restaurant__logo {
   @extend .logo;
   @extend .logo--dark;
-  font-size: 40px;
+  font-size: var(--fs-section-logo-m);
   line-height: 1.2;
   margin-bottom: 12px;
 
   @include tablet {
-    font-size: 64px;
+    font-size: var(--fs-section-logo-t);
     line-height: calc(77 / 64);
     margin-bottom: 24px;
   }

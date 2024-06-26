@@ -112,9 +112,7 @@
 .header__number {
   display: none;
   font-weight: var(--fw-regular);
-  font-size: 14px;
-  line-height: calc(17 / 14);
-  letter-spacing: 0.02em;
+  font-size: var(--fs-header-number);
   color: var(--header-number-cl);
   transition-property: color;
   transition-duration: var(--duration);

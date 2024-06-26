@@ -1,9 +1,13 @@
 .logo {
   font-family: var(--logo-font);
-  font-size: 36px;
+  font-size: var(--fs-logo-s);
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
   color: var(--accent-cl);
+
+  @include tablet {
+    font-size: var(--fs-logo-m);
+  }
 
   &--dark {
     color: var(--logo-dark-cl);

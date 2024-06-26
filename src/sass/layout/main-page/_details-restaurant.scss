@@ -119,8 +119,7 @@
   margin-bottom: 12px;
 
   @include tablet {
-    font-size: 64px;
-    line-height: 1.2;
+    font-size: var(--fs-section-logo-t);
     margin-bottom: 16px;
   }
 }
@@ -130,7 +129,7 @@
   margin-bottom: 20px;
 
   @include tablet {
-    font-size: 24px;
+    font-size: var(--fs-datails-title-t);
   }
 
   @include tablet {

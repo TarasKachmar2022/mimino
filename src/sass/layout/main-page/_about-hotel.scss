@@ -24,7 +24,7 @@
   margin-bottom: 16px;
 
   @include tablet {
-    font-size: 64px;
+    font-size: var(--fs-section-logo-t);
     margin-right: -20px;
     margin-bottom: 24px;
   }
