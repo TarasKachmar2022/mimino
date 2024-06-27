@@ -83,6 +83,7 @@
   font-size: var(--fs-modal-title-m);
   letter-spacing: var(--ls-modal-title);
   color: var(--modal-title-cl);
+  margin-bottom: 40px;
 
   @include tablet {
     font-size: var(--fs-modal-title-t);

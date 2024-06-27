@@ -6,5 +6,86 @@
       </svg>
     </button>
     <strong class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</strong>
+    <form class="form" name="booking-table" autocomplete="on">
+      <div class="form__group">
+        <label class="form__wrap">
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Ваше ім’я"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Мусить бути два слова розділені пробілом."
+          />
+          <span class="form__label">На кого забронювати столик?</span></label
+        >
+        <label class="form__wrap">
+          <input
+            class="form__input"
+            type="tel"
+            name="phone"
+            placeholder="+38 (___) ___-__-__"
+            minlength="17"
+            maxlength="17"
+            id="phone"
+            required
+          />
+          <span class="form__label">Номер телефону</span></label
+        >
+        <label class="form__wrap form__wrapper">
+          <select class="form__select" name="quantity">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+          </select>
+          <span class="form__label">Столик на яку кількість осіб?</span></label
+        >
+        <label class="form__wrap form__wrapper">
+          <select class="form__select" name="startdate">
+            <option value="today">Сьогодні</option>
+            <option value="tomorrow">Завтра</option>
+            <optgroup label="Цього тижня">
+              <option value="mo">Понеділок</option>
+              <option value="tu">Вівторок</option>
+              <option value="we">Середа</option>
+              <option value="th">Четвер</option>
+              <option value="fr">П'ятниця</option>
+              <option value="sa">Субота</option>
+              <option value="su">Неділя</option>
+            </optgroup>
+            <optgroup label="Наступні місяці">
+              <option value="ja">Січень</option>
+              <option value="fe">Лютий</option>
+              <option value="ma">Березень</option>
+              <option value="ap">Квітень</option>
+              <option value="may">Травень</option>
+              <option value="june">Червень</option>
+              <option value="july">Липень</option>
+              <option value="au">Серпень</option>
+              <option value="sept">Вересень</option>
+              <option value="oc">Жовтень</option>
+              <option value="no">Листопад</option>
+              <option value="de">Грудень</option>
+            </optgroup>
+          </select>
+
+          <!-- <input
+            class="form__input"
+            type="date"
+            name="date"
+            placeholder="Сьогодні"
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          /> -->
+          <span class="form__label">На яку дату бронювати?</span>
+        </label>
+      </div>
+      <button class="form__btn" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+    </form>
   </div>
 </div>

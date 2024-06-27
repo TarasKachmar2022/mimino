@@ -48,6 +48,7 @@
   --ls-main-title: 0.3em;
   --ls-uppertitle: 0;
   --ls-modal-title: 0.05em;
+  --ls-input: 0.05em;
   // Text colors
   --main-text-cl: #7a7a7a;
   --secondary-text-cl: #bababa;
@@ -59,18 +60,21 @@
   --header-number-cl: #ffffff;
   --hero-address-cl: #e5e5e5;
   --modal-title-cl: #000000;
+  --form-label-cl: #c79002;
+  --input-cl: #808080;
   // Background colors
   --bg-lemon-cl: #fffdee;
   --footer-bg-cl: #000000;
   --btn-bg-black-cl: #000000;
   --btn-bg-hovered-cl: #ffffff;
-  --modal-bg-cl: #f0ecd6;
+  --modal-bg-cl: #fffdee;
   // Logo colors
   --logo-dark-cl: #494848;
   --logo-white-cl: #ffffff;
   // Borders colors
   --btn-border-cl: #ffffff;
   --btn-border-hovered-cl: #f3c653;
+  --input-border-cl: #c79002;
   // Icon colors
   --arrow-white-cl: #ffffff;
   --arrow-black-cl: #000000;
@@ -84,6 +88,7 @@
   --br-header-number: 2px;
   --br-section-img: 2px;
   --br-modal: 2px;
+  --br-input: 2px;
   // Gradients
   --btn-gradient: rgba(0, 0, 0, 0.4);
   --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
