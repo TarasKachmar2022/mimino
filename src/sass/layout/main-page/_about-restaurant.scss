@@ -29,7 +29,6 @@
 
   @include tablet {
     font-size: var(--fs-section-logo-t);
-    line-height: calc(77 / 64);
     margin-bottom: 24px;
   }
 }
