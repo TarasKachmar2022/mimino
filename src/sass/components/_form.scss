@@ -1,5 +1,21 @@
 .form__group {
   margin-bottom: 40px;
+
+  @include tablet {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.form__thumb {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__wrap {
@@ -32,6 +48,11 @@
   background-color: transparent;
   margin-bottom: 8px;
   color: var(--input-cl);
+
+  @include tablet {
+    width: 288px;
+    height: 64px;
+  }
 }
 
 .form__select {
@@ -48,6 +69,10 @@
 // Забираємо стандартну стрілочку селекта в ІЕ 10 і 11
 .select::-ms-expand {
   display: none;
+}
+
+.form__label {
+  padding-left: 12px;
 }
 
 .form__wrapper {

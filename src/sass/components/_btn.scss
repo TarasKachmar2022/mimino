@@ -27,6 +27,9 @@
 
 .btn--black {
   background-color: var(--btn-bg-black-cl);
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
 
   &:hover,
   &:focus {
@@ -34,5 +37,33 @@
   }
 }
 
-.submit-btn {
+.form-btn {
+  @include font(500, 20px, 1.2, 0em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-cl);
+  border-radius: 2px;
+  background-color: var(--form-btn-bg-cl);
+  color: var(--form-btn-cl);
+  min-width: 384px;
+  padding-top: 19px;
+  padding-right: 20px;
+  padding-bottom: 19px;
+  padding-left: 20px;
+  transition-property: background-color color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  @include tablet {
+    min-width: 592px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    color: var(--form-btn-hovered-cl);
+  }
 }
