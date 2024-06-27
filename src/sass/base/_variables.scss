@@ -36,6 +36,8 @@
   --fs-hero-descr-t: 36px;
   --fs-hero-address-m: 12px;
   --fs-hero-address-t: 16px;
+  --fs-modal-title-m: 24px;
+  --fs-modal-title-t: 40px;
   // Line height
   --lh: 1.2;
   // Letter spacing
@@ -45,6 +47,7 @@
   --ls-hero-address: 0.01em;
   --ls-main-title: 0.3em;
   --ls-uppertitle: 0;
+  --ls-modal-title: 0.05em;
   // Text colors
   --main-text-cl: #7a7a7a;
   --secondary-text-cl: #bababa;
@@ -55,20 +58,23 @@
   --descr-text-cl: #bababa;
   --header-number-cl: #ffffff;
   --hero-address-cl: #e5e5e5;
+  --modal-title-cl: #000000;
   // Background colors
   --bg-lemon-cl: #fffdee;
   --footer-bg-cl: #000000;
   --btn-bg-black-cl: #000000;
   --btn-bg-hovered-cl: #ffffff;
+  --modal-bg-cl: #f0ecd6;
   // Logo colors
   --logo-dark-cl: #494848;
   --logo-white-cl: #ffffff;
   // Borders colors
   --btn-border-cl: #ffffff;
   --btn-border-hovered-cl: #f3c653;
-  // Arrows colors
+  // Icon colors
   --arrow-white-cl: #ffffff;
   --arrow-black-cl: #000000;
+  --close-btn-cl: #000000;
   // Accent colors
   --accent-cl: #f3c653;
   --accent-descr-text-cl: #c79002;
@@ -77,13 +83,12 @@
   --br-btn: 25px;
   --br-header-number: 2px;
   --br-section-img: 2px;
+  --br-modal: 2px;
   // Gradients
   --btn-gradient: rgba(0, 0, 0, 0.4);
   --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   // Backdrop color
-
-  // Shadows
-
+  --backdrop-cl: rgba(0, 0, 0, 0.2);
   // Duration
   --duration: 500ms;
   // Timing function
