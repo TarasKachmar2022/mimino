@@ -7,9 +7,9 @@
     </button>
     <strong class="modal__title">ЗАБРОНЮВАТИ СТОЛИК</strong>
     <form class="form" name="booking-table" autocomplete="on">
-      <div class="form__group">
-        <div class="form__thumb">
-          <label class="form__wrap">
+      <div class="form__group booking-table__group">
+        <div class="form__thumb booking-table__thumb">
+          <label class="form__wrap booking-table__wrap">
             <input
               class="form__input"
               type="text"
@@ -20,7 +20,7 @@
             />
             <span class="form__label">На кого забронювати столик?</span></label
           >
-          <label class="form__wrap">
+          <label class="form__wrap booking-table__wrap">
             <input
               class="form__input"
               type="tel"
@@ -35,49 +35,51 @@
           >
         </div>
         <div class="form__thumb">
-          <label class="form__wrap form__wrapper">
-            <select class="form__select" name="quantity">
-              <option value="one">1</option>
-              <option value="two">2</option>
-              <option value="three">3</option>
-              <option value="four">4</option>
-              <option value="five">5</option>
-              <option value="six">6</option>
-              <option value="seven">7</option>
-              <option value="eight">8</option>
-            </select>
-            <span class="form__label"
-              >Столик на яку кількість осіб?</span
-            ></label
-          >
-          <label class="form__wrap form__wrapper">
-            <select class="form__select" name="startdate">
-              <option value="today">Сьогодні</option>
-              <option value="tomorrow">Завтра</option>
-              <optgroup label="Цього тижня">
-                <option value="mo">Понеділок</option>
-                <option value="tu">Вівторок</option>
-                <option value="we">Середа</option>
-                <option value="th">Четвер</option>
-                <option value="fr">П'ятниця</option>
-                <option value="sa">Субота</option>
-                <option value="su">Неділя</option>
-              </optgroup>
-              <optgroup label="Наступні місяці">
-                <option value="ja">Січень</option>
-                <option value="fe">Лютий</option>
-                <option value="ma">Березень</option>
-                <option value="ap">Квітень</option>
-                <option value="may">Травень</option>
-                <option value="june">Червень</option>
-                <option value="july">Липень</option>
-                <option value="au">Серпень</option>
-                <option value="sept">Вересень</option>
-                <option value="oc">Жовтень</option>
-                <option value="no">Листопад</option>
-                <option value="de">Грудень</option>
-              </optgroup>
-            </select>
+          <label class="form__wrap booking-table__wrap">
+            <div class="form__wrapper">
+              <select class="form__select" name="quantity">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+                <option value="six">6</option>
+                <option value="seven">7</option>
+                <option value="eight">8</option>
+              </select>
+            </div>
+            <span class="form__label">Столик на яку кількість осіб?</span>
+          </label>
+          <label class="form__wrap">
+            <div class="form__wrapper">
+              <select class="form__select" name="startdate">
+                <option value="today">Сьогодні</option>
+                <option value="tomorrow">Завтра</option>
+                <optgroup label="Цього тижня">
+                  <option value="mo">Понеділок</option>
+                  <option value="tu">Вівторок</option>
+                  <option value="we">Середа</option>
+                  <option value="th">Четвер</option>
+                  <option value="fr">П'ятниця</option>
+                  <option value="sa">Субота</option>
+                  <option value="su">Неділя</option>
+                </optgroup>
+                <optgroup label="Наступні місяці">
+                  <option value="ja">Січень</option>
+                  <option value="fe">Лютий</option>
+                  <option value="ma">Березень</option>
+                  <option value="ap">Квітень</option>
+                  <option value="may">Травень</option>
+                  <option value="june">Червень</option>
+                  <option value="july">Липень</option>
+                  <option value="au">Серпень</option>
+                  <option value="sept">Вересень</option>
+                  <option value="oc">Жовтень</option>
+                  <option value="no">Листопад</option>
+                  <option value="de">Грудень</option>
+                </optgroup>
+              </select>
+            </div>
             <span class="form__label">На яку дату бронювати?</span>
           </label>
         </div>

@@ -1,0 +1,17 @@
+.booking-table__group {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 1023px) {
+    // margin-bottom: 20px;
+  }
+}
+
+.booking-table__wrap:first-child {
+  margin-bottom: 20px;
+}
+
+.booking-table__thumb {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
+}

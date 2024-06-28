@@ -1,6 +1,4 @@
 .form__group {
-  margin-bottom: 40px;
-
   @include tablet {
     display: flex;
     gap: 16px;
@@ -8,10 +6,6 @@
 }
 
 .form__thumb {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 20px;
-  }
-
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -22,10 +16,6 @@
   display: flex;
   flex-direction: column;
   color: var(--form-label-cl);
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }
 
 .form__input,
@@ -46,10 +36,11 @@
   border-radius: var(--br-input);
   outline: none;
   background-color: transparent;
-  margin-bottom: 8px;
   color: var(--input-cl);
+  margin-bottom: 8px;
 
   @include tablet {
+    font-size: 24px;
     width: 288px;
     height: 64px;
   }
@@ -62,7 +53,7 @@
   appearance: none;
 
   // Стилізуємо селект
-  padding-right: 25px;
+  padding-right: 60px;
   cursor: pointer;
 }
 
@@ -72,17 +63,29 @@
 }
 
 .form__label {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   padding-left: 12px;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .form__wrapper {
   position: relative;
 
+  @include tablet {
+    margin-right: auto;
+  }
+
   &::before {
     content: '';
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     width: 24px;
     height: 24px;
     background-image: url(./../images/svg/icon-arrow-down.svg);
