@@ -3,13 +3,13 @@
   font-size: var(--fs-main-title-m);
   letter-spacing: var(--ls-main-title);
   color: var(--logo-white-cl);
-  width: 303;
+  width: 303px;
   margin-right: auto;
   margin-left: auto;
 
   @include tablet {
     font-size: var(--fs-main-title-t);
-    width: 404;
+    width: 404px;
   }
 }
 
