@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         );
 
       modalElem.classList.remove('is-hidden');
+      refs.body.classList.add('no-scroll');
     });
   });
 
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       let parentModal = this.closest('.backdrop');
 
       parentModal.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
     });
   });
 
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
       item.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
     });
   });
 
@@ -55,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let parentModal = this.closest('.backdrop');
       parentModal.classList.add('is-hidden');
+      refs.body.classList.remove('no-scroll');
     });
   });
 });
