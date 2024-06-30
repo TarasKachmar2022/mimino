@@ -1,0 +1,98 @@
+.menu {
+  color: var(--menu-section-text-cl);
+
+  @include section(32, 32);
+  background-color: var(--bg-lemon-cl);
+
+  @include tablet {
+    @include section(58, 40);
+    background-color: var(--menu-section-bg-cl);
+  }
+
+  @include desktop {
+    @include section(58, 60);
+  }
+}
+
+.menu__title {
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  letter-spacing: 0em;
+  margin-bottom: 32px;
+}
+
+.hot-dish {
+  margin-bottom: 8px;
+}
+
+.menu__wrap {
+  margin-bottom: 28px;
+}
+
+.menu-table {
+  width: 384px;
+}
+
+.menu-table:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.menu-table__title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.dish-name {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  width: 226px;
+}
+
+.dish-weight {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.dish-price {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.dish-description {
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.desert__name {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.drinks__name {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 210px;
+}
+
+.menu__btn-wrap {
+  text-align: center;
+
+  @include tablet {
+    text-align: right;
+  }
+}
+
+.menu__btn {
+  @extend .btn;
+  @extend .btn--black;
+}

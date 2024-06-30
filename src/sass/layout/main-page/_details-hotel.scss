@@ -149,8 +149,12 @@
 }
 
 .details-hotel__btn-wrap {
-  margin-top: auto;
-  margin-bottom: 56px;
+  text-align: center;
+
+  @include tablet {
+    margin-top: auto;
+    margin-bottom: 56px;
+  }
 }
 
 .details-hotel__btn-wrap > .btn:not(:last-child) {

@@ -1,6 +1,6 @@
 .btn {
   @include font(700, 16px, 1.2, 0.02em);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-width: 2px;
