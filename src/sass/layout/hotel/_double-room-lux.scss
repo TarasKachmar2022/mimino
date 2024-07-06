@@ -1,0 +1,46 @@
+.double-room-lux {
+  @include section(32, 32);
+  background-color: var(--bg-lemon-cl);
+
+  @include tablet {
+    @include section(62, 104);
+  }
+
+  @include desktop {
+    @include section(72, 112);
+  }
+}
+
+.double-room-lux__uppertitle {
+  @extend %uppertitle;
+  margin-bottom: 8px;
+}
+
+.double-room-lux__logo {
+  @extend .logo;
+  @extend .logo--dark;
+  font-size: var(--fs-section-logo-m);
+  margin-bottom: 32px;
+
+  @include tablet {
+    font-size: var(--fs-section-logo-t);
+  }
+}
+
+.double-room-lux__title {
+  font-family: var(--secondary-font);
+  letter-spacing: 0.05em;
+  color: var(--rooms-text-cl);
+  margin-bottom: 12px;
+}
+
+.double-room-lux__descr {
+  @extend %descr;
+  width: 250px;
+  margin-bottom: 32px;
+}
+
+.double-room-lux__img {
+  margin-left: auto;
+  margin-bottom: 32px;
+}

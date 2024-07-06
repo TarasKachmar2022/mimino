@@ -1,19 +1,13 @@
 .header {
-  @include section(10, 10);
+  @include section(16, 16);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
   z-index: 100;
   transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-function);
-
-  @include mobile {
-    @include section(16, 16);
-  }
 
   @include tablet {
     @include section(24, 24);
@@ -28,21 +22,17 @@
 .header__wrap {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__logo {
   @extend .logo;
   @extend .logo--white;
-  margin-right: auto;
   z-index: 100;
 }
 
 .header__list {
   display: flex;
-
-  @include desktop {
-    margin-right: 140px;
-  }
 }
 
 .header__item {
