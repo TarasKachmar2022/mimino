@@ -3,17 +3,38 @@
   background-color: var(--bg-lemon-cl);
 
   @include tablet {
-    @include section(62, 104);
+    @include section(62, 40);
   }
 
   @include desktop {
-    @include section(72, 112);
+    @include section(72, 40);
+  }
+}
+
+.double-room-lux__wrap {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.double-room-lux__wrap:not(:last-child) {
+  @include tablet {
+    margin-bottom: 89px;
+  }
+
+  @include desktop {
+    margin-bottom: 121px;
   }
 }
 
 .double-room-lux__uppertitle {
   @extend %uppertitle;
   margin-bottom: 8px;
+
+  @include tablet {
+    margin-bottom: 4px;
+  }
 }
 
 .double-room-lux__logo {
@@ -24,6 +45,11 @@
 
   @include tablet {
     font-size: var(--fs-section-logo-t);
+    margin-bottom: 62px;
+  }
+
+  @include desktop {
+    margin-bottom: 72px;
   }
 }
 
@@ -32,15 +58,78 @@
   letter-spacing: 0.05em;
   color: var(--rooms-text-cl);
   margin-bottom: 12px;
+
+  @include tablet {
+    font-style: 30px;
+    margin-bottom: 16px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
 }
 
 .double-room-lux__descr {
   @extend %descr;
-  width: 250px;
+  max-width: 250px;
   margin-bottom: 32px;
+
+  @include tablet {
+    max-width: 439px;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-weight: 700;
+    max-width: 390px;
+  }
+}
+
+.double-room-lux__picture {
+  @include tablet {
+    z-index: 5;
+  }
 }
 
 .double-room-lux__img {
-  margin-left: auto;
+  @extend %section-img;
+  max-width: 244px;
   margin-bottom: 32px;
+  margin-left: auto;
+
+  @include tablet {
+    margin-top: -94px;
+    margin-right: 65px;
+    margin-bottom: 0;
+    max-width: 400px;
+  }
+
+  @include desktop {
+    margin-right: 95px;
+    max-width: 460px;
+  }
+}
+
+.double-room-lux__slider {
+  margin-bottom: 20px;
+}
+
+.double-room-lux__btn-wrap {
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+.double-room-lux__btn {
+  @extend .btn;
+  @extend .btn--black;
+}
+
+.double-room-lux__btn:not(:last-child) {
+  margin-bottom: 16px;
 }

@@ -330,3 +330,106 @@
     }
   }
 }
+
+// Double room lux
+.double-room-lux__slider {
+  @media screen and (max-width: 1023px) {
+    margin-left: -15px;
+    width: 284px;
+  }
+
+  @include tablet {
+    width: 428px;
+  }
+
+  @include desktop {
+    width: 548px;
+  }
+
+  & .swiper-ltr {
+    overflow: hidden;
+
+    @media screen and (max-width: 1023px) {
+      height: 246px;
+    }
+
+    @include tablet {
+      margin-top: -41px;
+    }
+
+    @include desktop {
+      margin-top: -72px;
+    }
+
+    & .swiper-wrapper {
+      margin-bottom: 52px;
+
+      @include tablet {
+        margin-bottom: 64px;
+      }
+    }
+
+    & .swiper-slide {
+      width: 194px !important;
+      overflow: hidden;
+
+      // @include tablet {
+      //   width: 194px !important;
+      // }
+
+      @include desktop {
+        width: 254px !important;
+      }
+    }
+
+    & .swiper-slide.swiper-slide-duplicate,
+    & .swiper-slide.swiper-slide-prev,
+    & .swiper-slide.swiper-slide-active,
+    & .swiper-slide.swiper-slide-next {
+      height: 194px;
+
+      @include tablet {
+        height: 254px;
+      }
+    }
+
+    & .swiper-button__wraper {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      gap: 32px;
+
+      @media screen and (max-width: 1023px) {
+        left: 15;
+      }
+
+      @include tablet {
+        right: 0;
+      }
+    }
+
+    & .swiper-button__next {
+      fill: var(--arrow-black-cl);
+      transition-property: fill;
+      transition-duration: var(--duration);
+      transition-timing-function: var(--timing-function);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-cl);
+      }
+    }
+
+    & .swiper-button__prev {
+      fill: var(--arrow-black-cl);
+      transition-property: fill;
+      transition-duration: var(--duration);
+      transition-timing-function: var(--timing-function);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-cl);
+      }
+    }
+  }
+}
