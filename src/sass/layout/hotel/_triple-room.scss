@@ -141,10 +141,6 @@
 .triple-room__btn-wrap {
   text-align: center;
 
-  @media screen and (max-width: 1023px) {
-    // margin-left: auto;
-  }
-
   @include tablet {
     display: flex;
     flex-direction: column;

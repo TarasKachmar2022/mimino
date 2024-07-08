@@ -1,0 +1,52 @@
+.price-modal__title {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: var(--price-modal-cl);
+  margin-bottom: 28px;
+}
+
+.price-modal__title-label,
+.price-modal__label {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--form-label-cl);
+  padding-left: 15px;
+}
+
+.price-modal__title-label {
+  padding-left: 0;
+}
+
+.price-modal__title-label,
+.price-modal__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-modal__item {
+  margin-bottom: 20px;
+}
+
+.price-modal__item:last-child {
+  margin-bottom: 40px;
+}
+
+.price-modal__input {
+  font-family: var(--secondary-font);
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  letter-spacing: var(--ls-input);
+  width: 100%;
+  height: 54px;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--input-border-cl);
+  border-radius: var(--br-input);
+  color: var(--input-cl);
+  margin-bottom: 8px;
+}
