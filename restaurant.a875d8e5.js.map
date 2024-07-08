@@ -1,1 +1,0 @@
-{"mappings":"gfAAAA,EAAA,S","sources":["src/restaurant.js"],"sourcesContent":["import './js/header-scroll';\nimport './js/swiper';\nimport './js/aos';\nimport './js/modals';\n"],"names":["parcelRequire"],"version":3,"file":"restaurant.a875d8e5.js.map"}

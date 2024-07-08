@@ -1,1 +1,0 @@
-{"mappings":"oeAAAA,EAAA,S","sources":["src/hotel.js"],"sourcesContent":["import './js/header-scroll';\nimport './js/swiper';\nimport './js/aos';\nimport './js/modals';\n"],"names":["parcelRequire"],"version":3,"file":"hotel.94963701.js.map"}
