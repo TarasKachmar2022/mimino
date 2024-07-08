@@ -6,7 +6,7 @@ import 'swiper/swiper.scss';
 const rtl = new Swiper('.swiper-rtl', {
   modules: [Navigation, Autoplay],
   speed: 2000,
-  slidesPerView: 1.3,
+  slidesPerView: 'auto',
   spaceBetween: 20,
   loop: true,
   autoplay: {

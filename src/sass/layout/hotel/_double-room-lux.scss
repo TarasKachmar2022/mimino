@@ -3,11 +3,11 @@
   background-color: var(--bg-lemon-cl);
 
   @include tablet {
-    @include section(62, 40);
+    @include section(62, 10);
   }
 
   @include desktop {
-    @include section(72, 40);
+    @include section(72, 10);
   }
 }
 
