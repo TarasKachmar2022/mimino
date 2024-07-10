@@ -1,1 +1,8 @@
-@import '../sass/layout/double-luxe/hero';
+@import './base/module';
+
+@import './utils/module';
+
+@import './components/module';
+
+@import '../sass/layout/double-luxe/module';
+@import '../sass/layout/modals/price-modals';

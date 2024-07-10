@@ -3,6 +3,24 @@ import Swiper, { Navigation, Autoplay } from 'swiper';
 // import Swiper styles
 import 'swiper/swiper.scss';
 
+const ms = new Swiper('.main-swiper', {
+  modules: [Navigation, Autoplay],
+  speed: 3000,
+  slidesPerView: 'auto',
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button__next',
+    prevEl: '.swiper-button__prev',
+  },
+  breakpoints: {
+    slidesPerView: 1,
+  },
+});
+
 const rtl = new Swiper('.swiper-rtl', {
   modules: [Navigation, Autoplay],
   speed: 2000,

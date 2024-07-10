@@ -1,0 +1,123 @@
+.room-hero {
+  @include section(15, 15);
+}
+
+.hero__slider {
+  position: relative;
+  margin-top: -15px;
+  margin-right: -15px;
+  margin-bottom: -15px;
+  margin-left: -15px;
+
+  @include tablet {
+    margin-right: -47px;
+    margin-left: -47px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    height: 717px;
+  }
+
+  @include desktop {
+    margin-right: -85px;
+    margin-left: -85px;
+  }
+
+  & .swiper-button__prev,
+  & .swiper-button__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    color: var(--accent-cl);
+    transition-property: color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-hovered-cl);
+    }
+  }
+
+  & .swiper-button__prev {
+    left: 15px;
+  }
+
+  & .swiper-button__next {
+    right: 15px;
+  }
+
+  & .swiper-button__icon {
+    fill: currentColor;
+    background-color: var(--rooms-arrow-bg-cl);
+  }
+}
+
+.room-hero__wrap {
+  position: absolute;
+  left: 15;
+  bottom: 15;
+  z-index: 100;
+  color: var(--room-hero-cl);
+}
+
+.room-hero__title {
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  width: 310px;
+  margin-bottom: 15px;
+}
+
+.room-hero__descr {
+  font-weight: 700;
+  font-size: 12px;
+  width: 310px;
+  margin-bottom: 15px;
+}
+
+.room-hero__address {
+  display: none;
+
+  // @include tablet {
+  //   font-size: var(--fs-hero-address-t);
+  //   min-width: 285px;
+  //   min-height: 56px;
+  // }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--accent-cl);
+    font-size: var(--fs-hero-address-m);
+    line-height: calc(14 / 12);
+    letter-spacing: var(--ls-hero-address);
+    color: var(--hero-address-cl);
+    padding: 8px;
+    transition-property: color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-cl);
+    }
+  }
+}
+
+.room-hero__btn-wrap {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+.room-hero__btn {
+  @extend .btn;
+  min-width: 232px;
+  margin-left: auto;
+}
