@@ -1,9 +1,6 @@
 .room-hero {
-  @include section(15, 15);
-  position: relative;
-
-  @include tablet {
-    @include section(0, 0);
+  @media screen and (max-width: 1023px) {
+    @include section(15, 15);
   }
 }
 
