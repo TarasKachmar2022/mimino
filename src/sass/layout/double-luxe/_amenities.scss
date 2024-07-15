@@ -1,0 +1,115 @@
+.amenities {
+  @include section(50, 40);
+  font-weight: 700;
+  background-color: var(--bg-lemon-cl);
+
+  @include desktop {
+    @include section(48, 48);
+  }
+}
+
+.amenities__title {
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  letter-spacing: 0em;
+  margin-bottom: 16px;
+  color: var(--room-amenities-titles-cl);
+}
+
+.amenities__descr {
+  margin-bottom: 32px;
+
+  @include tablet {
+    width: 757px;
+  }
+}
+
+.amenities__item {
+  margin-bottom: 32px;
+}
+
+.amenities__item p {
+  @include tablet {
+    width: 400px;
+  }
+}
+
+.amenities__item p:not(:last-child) {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 16px;
+  }
+}
+
+.amenities__subtitle {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  letter-spacing: 0em;
+  color: var(--room-amenities-titles-cl);
+  margin-bottom: 16px;
+}
+
+.amenities__thumb {
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
+
+  @include desktop {
+    gap: 159px;
+  }
+}
+
+.amenities__btn {
+  @extend .btn;
+  @extend .btn--black;
+  font-size: 20px;
+  border-radius: 25px;
+  color: var(--amenition-btn-cl);
+  width: 100%;
+  height: 64px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 32px;
+    margin-left: auto;
+    width: 434px;
+  }
+
+  @include desktop {
+    margin-right: 114px;
+  }
+}
+
+.amenities__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--amenities-link-cl);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+
+  @include tablet {
+    justify-content: right;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  @include desktop {
+    margin-right: 114px;
+  }
+}
+
+.amenities__icon {
+  fill: currentColor;
+}
