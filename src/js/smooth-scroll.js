@@ -1,11 +1,10 @@
 window.addEventListener('load', function () {
-  console.log(window.location.hash.substring(1));
   if (window.location.hash) {
     setTimeout(function () {
       const targetElement = document.getElementById(
         window.location.hash.substring(1)
       );
-      console.log(targetElement);
+
       if (targetElement) {
         let topOffset = 0;
         topOffset = topOffsetSelector();
@@ -16,7 +15,6 @@ window.addEventListener('load', function () {
           top: offsetPosition,
           behavior: 'smooth',
         });
-        console.log(offsetPosition);
       }
     }, 100);
   }
@@ -28,7 +26,6 @@ document.querySelectorAll('a.hero__btn').forEach(link => {
 
     const href = this.getAttribute('href').substring(1);
     const scrollTarget = document.getElementById(href);
-    console.log(href);
 
     let topOffset = 0;
     topOffset = topOffsetSelector();

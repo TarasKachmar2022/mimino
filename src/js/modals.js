@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   refs.openModalBtns.forEach(function (item) {
     item.addEventListener('click', function (e) {
       e.preventDefault();
+      console.log(refs.openModalBtns);
 
       let modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
@@ -33,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   window.addEventListener('keydown', function (e) {
-    e.preventDefault();
-
     if (e.code !== 'Escape') {
       return;
     }
+
+    e.preventDefault();
 
     refs.backdrop.forEach(function (item) {
       if (item.classList.contains('is-hidden')) {
