@@ -185,6 +185,11 @@
   }
 }
 
+.hero__icon {
+  margin-right: 8px;
+  fill: var(--location-icon-cl);
+}
+
 .hero__wrap {
   display: inline-flex;
   flex-direction: column;

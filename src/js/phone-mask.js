@@ -1,8 +1,12 @@
 import IMask from 'imask';
 
-const phoneInputEl = document.querySelector('#phone');
-console.log(phoneInputEl);
+const btPhoneEl = document.querySelector('#btphone');
+const brPhoneEl = document.querySelector('#brphone');
 
-const mask = new IMask(phoneInputEl, {
+const btMask = new IMask(btPhoneEl, {
+  mask: '+{38}(000)000-00-00',
+});
+
+const brMask = new IMask(brPhoneEl, {
   mask: '+{38}(000)000-00-00',
 });
