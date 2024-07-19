@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
   refs.openModalBtns.forEach(function (item) {
     item.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log(refs.openModalBtns);
 
       let modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(

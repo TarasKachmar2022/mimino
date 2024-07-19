@@ -1,4 +1,6 @@
 .room-hero {
+  text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000,
+    -1px 1px 0 #000000;
   @media screen and (max-width: 1023px) {
     @include section(15, 15);
   }
