@@ -5,3 +5,4 @@ import './js/modals';
 import './js/smooth-scroll';
 import './js/phone-mask';
 import './js/form';
+import './js/scroll-up';

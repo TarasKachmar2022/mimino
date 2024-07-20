@@ -1,4 +1,4 @@
-window.onscroll = () => changeHeaderBackground();
+window.addEventListener('scroll', changeHeaderBackground);
 
 function changeHeaderBackground() {
   const header = document.querySelector('[data-header]');
