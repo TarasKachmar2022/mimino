@@ -8,9 +8,9 @@ function scrollFunction() {
     document.body.scrollTop > 400 ||
     document.documentElement.scrollTop > 400
   ) {
-    btnEl.classList.add('btnUP--active');
+    btnEl.classList.add('btn-up--active');
   } else {
-    btnEl.classList.remove('btnUP--active');
+    btnEl.classList.remove('btn-up--active');
   }
 }
 
