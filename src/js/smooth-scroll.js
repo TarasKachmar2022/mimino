@@ -1,22 +1,20 @@
 window.addEventListener('load', function () {
   if (window.location.hash) {
-    setTimeout(function () {
-      const targetElement = document.getElementById(
-        window.location.hash.substring(1)
-      );
+    const targetElement = document.getElementById(
+      window.location.hash.substring(1)
+    );
 
-      if (targetElement) {
-        let topOffset = 0;
-        topOffset = topOffsetSelector();
+    if (targetElement) {
+      let topOffset = 0;
+      topOffset = topOffsetSelector();
 
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - topOffset;
-        window.scrollBy({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
-      }
-    }, 100);
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
   }
 });
 
