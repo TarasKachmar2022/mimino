@@ -22,7 +22,8 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transform: translate(-50%, -50%) scaleY(1);
+  opacity: 1;
   width: 414px;
   height: auto;
   background-color: var(--modal-bg-cl);
@@ -32,7 +33,7 @@
   padding-bottom: 60px;
   padding-left: 15px;
   transition-property: transform, opacity;
-  transition-duration: var(--duration);
+  transition-duration: var(--duration-fast);
   transition-timing-function: var(--timing-function);
 
   @include tablet {
@@ -44,8 +45,8 @@
   }
 
   .backdrop.is-hidden & {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0) rotate(90deg);
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scaleY(0);
   }
 }
 

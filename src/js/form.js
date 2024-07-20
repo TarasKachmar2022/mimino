@@ -1,7 +1,7 @@
 const refs = {
   formEl: document.querySelectorAll('.form'),
+  body: document.querySelector('.js-page'),
 };
-console.log(refs.formEl);
 
 refs.formEl.forEach(function (item) {
   item.addEventListener('submit', function (event) {
@@ -11,5 +11,10 @@ refs.formEl.forEach(function (item) {
     new FormData(event.currentTarget).forEach((value, name) =>
       console.log(`${name}: ${value}`)
     );
+
+    let parentModal = this.closest('.backdrop');
+
+    parentModal.classList.add('is-hidden');
+    refs.body.classList.remove('no-scroll');
   });
 });
