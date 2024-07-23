@@ -85,16 +85,13 @@ function modalMarkup({ roomtype }) {
           <label class="price-modal__label">грн</label>
         </div>
       </div>
-      <button class="form-btn" type="button">
-        ЗАБРОНЮВАТИ НОМЕР
-      </button>
       </div>
   </div>
   `;
 }
 
 function appendModalMarkup({ id, roomtype, price }) {
-  const priceModalEl = document.querySelector('.price-modal');
+  const priceModalEl = document.querySelector('.price-modal-markup');
 
   priceModalEl.innerHTML = '';
   priceModalEl.insertAdjacentHTML(
