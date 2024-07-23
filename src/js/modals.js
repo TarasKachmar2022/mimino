@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       let parentModal = this.closest('.backdrop');
+
       parentModal.classList.add('is-hidden');
       refs.body.classList.remove('no-scroll');
     });

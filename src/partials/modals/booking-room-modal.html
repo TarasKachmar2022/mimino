@@ -57,9 +57,13 @@
       <div class="form__group booking-room__selection-group">
         <label class="form__wrap booking-room__wrap">
           <div class="form__wrapper">
-            <select class="form__select" name="startdate">
-              <option value="today">Сьогодні</option>
-              <option value="tomorrow">Завтра</option>
+            <select
+              class="form__select js-select"
+              id="first-date"
+              name="firstdate"
+            >
+              <!-- <option value="first-date">Сьогодні</option> -->
+              <!-- <option value="tomorrow">Завтра</option>
               <optgroup label="Цього тижня">
                 <option value="mo">Понеділок</option>
                 <option value="tu">Вівторок</option>
@@ -82,15 +86,19 @@
                 <option value="oc">Жовтень</option>
                 <option value="no">Листопад</option>
                 <option value="de">Грудень</option>
-              </optgroup>
+              </optgroup> -->
             </select>
           </div>
           <span class="form__label">Дата заїзду</span>
         </label>
         <label class="form__wrap">
           <div class="form__wrapper">
-            <select class="form__select" name="enddate">
-              <option value="today">Сьогодні</option>
+            <select
+              class="form__select js-select"
+              id="last-date"
+              name="lastdate"
+            >
+              <!-- <option value="today">Сьогодні</option>
               <option value="tomorrow">Завтра</option>
               <optgroup label="Цього тижня">
                 <option value="mo">Понеділок</option>
@@ -114,7 +122,7 @@
                 <option value="oc">Жовтень</option>
                 <option value="no">Листопад</option>
                 <option value="de">Грудень</option>
-              </optgroup>
+              </optgroup> -->
             </select>
           </div>
           <span class="form__label">Дата виїзду</span>
