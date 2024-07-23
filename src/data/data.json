@@ -1,0 +1,17 @@
+[
+  {
+    "roomtype": "Двомісний люкс",
+    "price": 2000,
+    "id": "price-double-room-luxe"
+  },
+  {
+    "roomtype": "Тримісний номер",
+    "price": 1500,
+    "id": "price-triple-room"
+  },
+  {
+    "roomtype": "Двомісний номер",
+    "price": 1000,
+    "id": "price-double-room"
+  }
+]

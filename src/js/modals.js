@@ -11,10 +11,18 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', function (e) {
       e.preventDefault();
 
-      let modalId = this.getAttribute('data-modal'),
+      let modalElem = '';
+
+      let modalId = this.getAttribute('data-modal');
+      modalElem = document.querySelector(
+        '.backdrop[data-modal="' + modalId + '"]'
+      );
+
+      if (!modalElem) {
         modalElem = document.querySelector(
-          '.backdrop[data-modal="' + modalId + '"]'
+          '.backdrop[data-modal="price-modal"]'
         );
+      }
 
       modalElem.classList.remove('is-hidden');
       refs.body.classList.add('no-scroll');

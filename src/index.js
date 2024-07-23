@@ -1,6 +1,7 @@
 import './js/header-scroll';
 import './js/swiper';
 import './js/aos';
+import './js/price-modal-markup';
 import './js/modals';
 import './js/smooth-scroll';
 import './js/phone-mask';
