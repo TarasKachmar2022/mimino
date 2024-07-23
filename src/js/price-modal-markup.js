@@ -90,8 +90,6 @@ function modalMarkup({ roomtype }) {
       </button>
       </div>
   </div>
-      
-      
   `;
 }
 
