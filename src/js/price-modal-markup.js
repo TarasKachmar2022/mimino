@@ -10,45 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
 
       let modalId = this.getAttribute('data-modal');
-      // modalElem = document.querySelector(
-      //   '.backdrop[data-modal="' + modalId + '"]'
-      // );
-      console.log(item);
-      console.log(refs.openModalBtnsEl);
-      console.log(modalId);
-      // console.log(priceModalEl);
-
-      // console.log(modalElem.querySelector('.price-modal__title'));
-      // console.log(modalElem);
 
       data.forEach(function ({ roomtype, price, id }) {
         if (modalId === id) {
-          console.log(roomtype);
-          console.log(price);
-          console.log(id);
-
           return appendModalMarkup({ id, roomtype, price });
-          // modalMarkup({
-          //   id,
-          //   roomtype,
-          //   price,
-          // });
-          // const priceModalTitleEl = modalElem.querySelector(
-          //   '.price-modal__title'
-          // );
-
-          // priceModalTitleEl.textContent = `${roomtype}`;
-          // console.log(priceModalTitleEl);
         }
       });
     });
   });
 });
 
-function modalMarkup({ id, roomtype, price }) {
+function modalMarkup({ roomtype }) {
   return `
       <strong class="modal__title">ЦІНИ НА НОМЕР</strong>
-   
     <p class="price-modal__title">${roomtype}</p>
     <p class="price-modal__title-label">Категорія номеру</p>
       <div class="price-modal__list">
@@ -85,17 +59,29 @@ function modalMarkup({ id, roomtype, price }) {
               <option value="28">28</option>
               <option value="29">29</option>
               <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+              <option value="34">34</option>
+              <option value="35">35</option>
+              <option value="36">36</option>
+              <option value="37">37</option>
+              <option value="38">38</option>
+              <option value="39">39</option>
+              <option value="40">40</option>
             </select>
           </div>
           <label class="price-modal__label">Кількість ночей</label>
         </div>
         <div class="price-modal__wrapper">
+        <div class="price-modal__box">
         <input
-          class="price-modal__select"
+          class="price-modal__select price-modal__result"
           id="js-price-modal-result"
           readonly
         />
-          
+        <p class="price-modal__discount" id="js-price-modal-discount"></p>
+        </div>
           <label class="price-modal__label">грн</label>
         </div>
       </div>
@@ -111,7 +97,7 @@ function modalMarkup({ id, roomtype, price }) {
 
 function appendModalMarkup({ id, roomtype, price }) {
   const priceModalEl = document.querySelector('.price-modal');
-  console.log(priceModalEl);
+
   priceModalEl.innerHTML = '';
   priceModalEl.insertAdjacentHTML(
     'beforeend',
@@ -127,19 +113,25 @@ function appendModalMarkup({ id, roomtype, price }) {
 function totalPrice(price) {
   const selectEl = document.getElementById('js-price-modal-select');
   const resultEl = document.getElementById('js-price-modal-result');
+  const discountEl = document.getElementById('js-price-modal-discount');
 
   resultEl.value = (selectEl.value * `${price}`).toLocaleString('uk-UA');
 
   selectEl.addEventListener('change', function () {
-    console.log(resultEl.value);
     const quantityDays = selectEl.value;
-    console.log(quantityDays);
     const discountValue = discount(selectEl.value);
-    console.log(discountValue);
+
     resultEl.value = (
       (`${price}` - `${price}` * (`${discountValue}` / 100)) *
       `${quantityDays}`
     ).toLocaleString('uk-UA');
+
+    if (discountValue === 0) {
+      discountEl.style.display = 'none';
+    } else {
+      discountEl.style.display = 'block';
+      discountEl.textContent = `-${discountValue}%`;
+    }
   });
 }
 

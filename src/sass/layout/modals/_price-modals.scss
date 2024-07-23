@@ -58,6 +58,10 @@
   }
 }
 
+.price-modal__wrapper {
+  position: relative;
+}
+
 .price-modal__wrapper:first-child {
   @media screen and (max-width: 1023px) {
     margin-bottom: 20px;
@@ -141,4 +145,23 @@
   border-radius: var(--br-input);
   color: var(--input-cl);
   margin-bottom: 8px;
+}
+
+.price-modal__box {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.price-modal__result {
+  margin-bottom: 0;
+}
+
+.price-modal__discount {
+  position: absolute;
+  right: 12px;
+  bottom: 50%;
+  font-weight: 700;
+  transform: translateY(50%);
+  color: var(--discount-text-cl);
+  margin-top: -20px;
 }
