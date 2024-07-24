@@ -1,4 +1,4 @@
-btnEl = document.getElementById('btnUp');
+const btnEl = document.getElementById('btn-up');
 
 window.addEventListener('scroll', scrollFunction);
 btnEl.addEventListener('click', topFunction);
