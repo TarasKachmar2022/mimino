@@ -30,9 +30,6 @@ function bookingTableRenderSelect() {
     '.js-select#reserve-table-datetime'
   );
 
-  console.log(reserveTableDatetime);
-  console.log(dayjs().format('DD.MM.YYYY HH:mm'));
-
   let datetimeMarkup = [];
   let date = dayjs();
 
